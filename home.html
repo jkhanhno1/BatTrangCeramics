@@ -1,0 +1,726 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        TRANG CHỦ - KHANH CERAMIC
+    </title>
+    <link rel="stylesheet" href="style1.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Tillana&display=swap');
+    </style>
+    <!-- link file hieu ung -->
+    <!-- link file css hieu ung  -->
+    <link rel="stylesheet" type="text/css" href="hieuung.css">
+    <link rel="stylesheet" href="link.css">
+</head>
+
+<body>
+
+    <div id="hoplen" class="hoplen"><ion-icon id="len" class="len" name="arrow-up-outline"></ion-icon></div>
+
+
+
+    <div class="iconmenu" id="iconmenu"><ion-icon name="menu-outline"></ion-icon></div>
+    <div id="thongbaosanphamvaoyeuthich" class="thongbaosanphamvaoyeuthich">
+        <div class="thanhthoigian"></div>
+        <div id="thongbaosanphamvaoyeuthich" class="chuthongbaoyeuthich">Đã Thêm Sản Phẩm vào Danh Mục yêu Thích
+            <ion-icon style="color: red;" name="heart-circle-outline"></ion-icon>
+        </div>
+
+
+        <button id="favorites"><a style="color: aliceblue;" href="tranmucyeuthich.html">GO TO FAVORITES</a> <ion-icon
+                name="log-out-outline"></ion-icon></button>
+    </div>
+    <div id="giohangssss" class="giohangssss">Đã thêm Sản Phẩm vào giỏ hàng
+        <ion-icon style="color: red;" name="heart-like-outline"></ion-icon> <br>
+        <button style="padding: 3px;background-color:   #34495e;border-radius: 5px; font-size: 15px;" id="favorites"><a
+                style="color: aliceblue;" href="tranmucyeuthich.html">GO TO CART</a>
+            <ion-icon name="log-out-outline"></ion-icon></button>
+    </div>
+
+
+    <div class="hopmenu" id="hopmenu">
+        <div class="iconmenu1" id="iconmenu1"> <ion-icon name="menu-outline"></ion-icon></div>
+        <ul style="z-index: 5;" class="menungang1">
+
+            <span class="home">KHANH CERAMIC.</span>
+            <li class="home1" id="vitri1">HOME</li>
+            <li class="sanpham"><a href="thumucsanpham.html">PRODUCT</a></li>
+            <li id="vitri5">ABOUT</li>
+            <li id="vitri6">CONTACT</li>
+            <li class="home4" id="vitri77"><a href="trangmuchinhanh.html">PICTURES</a></li>
+
+            <li>YOUR ACCOUNT <ion-icon name="person-circle-outline"></ion-icon></li>
+            <li><a href="tranggiohang.html">YOUR CART<ion-icon name="cart-outline"></ion-icon>
+                </a></li>
+            <li id="timkiem"><a href="timkiemsanpham.html">TÌM KIẾM SẢN PHẨM<ion-icon id="timkiem"
+                        name="search-outline"></ion-icon></a></li>
+            <li><a href="tranmucyeuthich.html">THƯ MỤC YÊU
+                    THÍCH <ion-icon id="thumucyeuthich" name="heart-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+    <!-- hop menu dung im -->
+
+    <div class="container">
+        <div class="main">
+            <div class="nav" id="nav">
+                <ul>
+                    <li class="home"><a href="home.html">KHANH CERAMIC.</a></li>
+                    <li style="background-color: #2d3436 ; padding: 10px; border-radius: 10px;color: white;"
+                        class="home1"><a style="color: white;" href="home.html">HOME</a>
+                    </li>
+                    <li class="sanpham"><a href="thumucsanpham.html">PRODUCT</a></li>
+                    <li class="home2" id="vitri55">ABOUT</li>
+                    <li class="home3" id="vitri66">CONTACT</li>
+                    <li class="home4" id="vitri77"><a href="trangmuchinhanh.html">PICTURES</a></li>
+
+                    <li><ion-icon name="person-circle-outline"></ion-icon></li>
+                    <li id="giohang"><a href="tranggiohang.html"><ion-icon name="cart-outline"></ion-icon>
+                            <p id="tongsanpham"></p>
+                        </a></li>
+                    <li id="timkiem">
+                        <a href="timkiemsanpham.html"> <ion-icon id="timkiem" name="search-outline"></ion-icon></a>
+                    </li>
+                    <li><a href="tranmucyeuthich.html"><ion-icon id="thumucyeuthich"
+                                name="heart-outline"></ion-icon></a></li>
+                </ul>
+            </div>
+
+            <div class="banner-3" id="banner-3">
+                <div class="anh active"><img src="anh/banner0.jpg" id="anhhhhh" alt=""></div>
+
+                <div class="hopnut0000" id="hopnut0000">
+                    <div class="nut01" id="nut01"></div>
+                    <div class="nut02" id="nut02"></div>
+                    <div class="nut03" id="nut03"></div>
+                    <div class="nut04" id="nut04"></div>
+                </div>
+
+
+            </div>
+
+            <div id="thanhtrai" class="thanhtrai"><ion-icon name="arrow-back-outline"></ion-icon></div>
+            <div class="thanhphai" id="thanhphai"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+            <div class="hopsale" id="hopsale"> </div>
+
+            <div class="dichvu" id="dichvu">
+                <div id="hopchua1" class="hopFreeShipping">
+                    <div id="hopchuacon1" class="hopchuaicon"><i class="fa fa-shipping-fast"></i></div>
+                    <div class="hopchuachu"><b>Free Shipping</b> <br>
+                        Nhanh, chính xác, đáng tin cậy, và hiệu quả.</div>
+                </div>
+                <div id="hopchua2" class="hopOnlineSupport">
+                    <div id="hopchuacon2" class="hopchuaicon"><ion-icon name="call-outline"></ion-icon></div>
+                    <div class="hopchuachu"><b>Online Support</b> <br>
+                        Tận tâm, chu đáo, nhiệt tình, hiệu quả.</div>
+                </div>
+                <div id="hopchua3" class="hopMoneyBack">
+                    <div id="hopchuacon3" class="hopchuaicon"><ion-icon name="reload-outline"></ion-icon></div>
+                    <div class="hopchuachu"><b>Money Back</b> <br>
+                        Hoàn Tiền 100% khi gặp lỗi giao hàng </div>
+                </div>
+                <div id="hopchua4" class="hopOurServices">
+                    <div id="hopchuacon4" class="hopchuaicon"><i class="fa fa-cog"></i></div>
+                    <div class="hopchuachu"><b>Our Services</b> <br>
+                        Chuyên Nghiệp ,Chất lượng ,Nhanh Chóng , linh Hoạt</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container1" id="container1">
+        <div class="main">
+            <div class="TopCategories">Top Categories <br>
+                <div class="thanhchancuaTopCategories" id="thanhchancuaTopCategories"></div>
+            </div>
+            <div class="hopchuasanphamtop">
+                <div class="anh11" id="anh11"><img id="anh111" src="anh/category-image1.jpg" alt="">
+                    <div id="hopmo"></div>
+                    <div id="brank1" data-brank="Ceramic Flower Vase"></div>
+                    <div class="hopchuadanhmuc">
+                        <button id="love0" data-price="104"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh1/goc1.jpg" data-goc2="anh1/goc2.jpg"
+                            data-goc3="anh1/goc3.jpg" data-goc4="anh1/goc4.jpg"
+                            data-chitiet="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci <img src='https://wowlavie-aws.hmgcdn.com/file/article_all/A1529034894.jpg' > velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, <img src='https://wowlavie-aws.hmgcdn.com/file/article_all/A1529054185.jpg'>  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <img src='https://wowlavie-aws.hmgcdn.com/file/article_all/A1529054319.jpg'> occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda <img src='https://wowlavie-aws.hmgcdn.com/file/article_all/A1529055313.jpg'>est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang0"><ion-icon name="bag-add-outline"></ion-icon></button>
+
+
+                        <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                        <p>Accusantium Doloremque <br> <b>$ 104.00</b></p>
+                        <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                    </div>
+                </div>
+
+                <div class="anh11" id="anh22"><img id="anh222" src="anh/category-image2.jpg" alt="">
+                    <div id="brank2" data-brank="Ceramic Modern Art"></div>
+                    <div class="hopchuadanhmuc1">
+                        <button id="love1" data-price="104"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh2/goc1.jpg" data-goc2="anh2/goc2.jpg"
+                            data-goc3="anh2/goc3.jpg" data-goc4="anh2/goc4.jpg"
+                            data-chitiet="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore <img src='https://cdn.shopify.com/s/files/1/1865/9309/products/XL-white-deer1_360x.JPG?v=1570887087'> et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui <img src='https://cdn.shopify.com/s/files/1/1865/9309/products/large_white_deer_head__28423.1381354133_360x.jpg?v=1570887241'> ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, <img src='https://cdn.shopify.com/s/files/1/1865/9309/products/large_white_deer_head__28423.1381354133_360x.jpg?v=1570887241'> nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble  <img src='https://cdn.shopify.com/s/files/1/1865/9309/products/mini-white-deer-head-gold-antlers-1_360x.JPG?v=1556052401'>that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple<img src='https://cdn.shopify.com/s/files/1/1865/9309/products/deer-skull-mini-white-gold-antlers-1_360x.jpg?v=1507816916'> and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain<img src='https://cdn.shopify.com/s/files/1/1865/9309/products/White-Gold-Buck-Doe-Set-Alfred-Ophelia-His-and-Hers_jpg_360x.jpg?v=1555527528'> circumstances and owing to the claims of duty or the obligations of business it will frequently occur that<img src='https://cdn.shopify.com/s/files/1/1865/9309/products/deer-skull-mini-white-gold-antlers-1_360x.jpg?v=1507816916'> pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. "
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang1"><ion-icon name="bag-add-outline"></ion-icon></button>
+
+                        <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                        <p>Accusantium Doloremque <br> <b>$ 104.00</b></p>
+                        <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+
+                    </div>
+                </div>
+                <div class="anh11" id="anh33"><img id="anh333" src="anh/category-image3.jpg" alt="">
+                    <div id="brank3" data-brank="Home Decor Art"></div>
+                    <div class="hopchuadanhmuc2">
+                        <button id="love2" data-price="104"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh3/goc1.jpg" data-goc2="anh3/goc2.jpg"
+                            data-goc3="anh3/goc3.jpg" data-goc4="anh3/goc4.jpg"
+                            data-chitiet="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://guongbi.com/wp-content/uploads/2017/07/d9.png'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://bizweb.dktcdn.net/100/098/272/files/tuong-dau-phat-dep-5.jpg?v=1501484436428'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://bizweb.dktcdn.net/100/098/272/files/tuong-dau-phat-dep-1.jpg?v=1501484456994'>the charms of pleasure of the moment, <img src='https://bizweb.dktcdn.net/100/098/272/files/dau-tuong-phat-1-c63e0489-cb45-4aa7-a387-17eff2fcd8de.jpg?v=1501484720497'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://bizweb.dktcdn.net/100/098/272/files/tuong-dau-phat-dep-4.jpg?v=1501484472248'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. Tượng decor phật tổ
+
+                            Tượng Phật Tổ Decor ngoài những tác dụng sâu xa của Phật Giáo còn cho chúng ta rất nhiều điều về mặt tâm lý chiều sâu, rất tinh tế về mặt khoa học tâm linh và cũng là công cụ hỗ trợ đặc biệt về khoa học phong thủy Decor nội thất hiện đại, tạo ra một không gian thiền định, tĩnh tâm sâu lắng, hướng thiện và cầu bình an.	"
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang2"><ion-icon name="bag-add-outline"></ion-icon></button>
+
+                        <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                        <p>Accusantium Doloremque <br> <b>$ 104.00</b></p>
+                        <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hopgioithieus" id="hopgioithieu1">Đồ gốm là một loại đồ dùng rất phổ biến trong đời sống hàng
+                ngày của con
+                người.
+                Nó
+                được làm từ đất sét, sau đó được nung trong lò để tạo thành các sản phẩm như bát đĩa, chén tô, ấm
+                chén
+                trà,
+                bình hoa và nhiều sản phẩm công nghiệp khác. Đồ gốm đem lại những lợi ích về tính thẩm mỹ, tính hữu
+                dụng
+                và
+                tính tiết kiệm cho người sử dụng. Với tính thẩm mỹ, đồ gốm có thiết kế đa dạng, phong phú, có nhiều
+                màu
+                sắc
+                và họa tiết khác nhau, tạo nên sự độc đáo, tiện lợi và thẩm mỹ cho người sử dụng. Tính hữu dụng của
+                đồ
+                gốm
+                còn thể hiện ở khả năng chịu nhiệt, an toàn cho sức khỏe và dễ chăm sóc. Cuối cùng, tính tiết kiệm
+                của
+                đồ
+                gốm được thể hiện ở giá cả phải chăng vì nó dễ dàng sản xuất và có thể sử dụng lâu dài. Vì thế, đồ
+                gốm
+                được
+                xem là một sản phẩm không thể thiếu trong cuộc sống của mọi người.</div>
+
+            <div id="thanh1s"></div>
+            <div id="thanh2s"></div>
+        </div>
+
+
+    </div>
+
+    <div class="container2">
+        <div class="main">
+
+            <div class="TopCategories">Product inventory<br>
+                <div class="thanhchancuaTopCategoriess"></div>
+            </div>
+
+            <div class="banner-30" id="banner-30">
+                <div class="hopsp30" id="hopsp30-3">
+                    <img src="anh/02-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1111">
+                        <button id="love3" data-price="104"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh4/goc1.jpg" data-goc2="anh4/goc2.jpg"
+                            data-goc3="anh4/goc3.jpg" data-goc4="anh4/goc4.jpg"
+                            data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                            Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                            Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                            Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                            Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                            Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                            S2: Chiều cao 20cm – Đường kính 9cm
+                            
+                            S3: Chiều cao 25cm – Đường kính 10cm
+                            
+                            Số lượng gia công	Theo yêu cầu
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://icdn.dantri.com.vn/thumb_w/770/2022/05/18/trien-lam00014-1652842937528.jpeg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://images.fineartamerica.com/images-medium-large/organic-form-patty-sheppard.jpg'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'>the charms of pleasure of the moment, <img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	"
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang3"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+
+
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></div>
+                    <p>Accusantium Doloremque <br> <b>$ 104.00</b></p>
+                    <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-4">
+                    <img src="anh/03-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1112">
+                        <button id="love4" data-price="101"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh5/goc1.jpg" data-goc2="anh5/goc2.jpg"
+                            data-goc3="anh5/goc3.jpg" data-goc4="anh5/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                            Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bài chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết   hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức i chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức i chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức n thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                            Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                            Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                            Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://cdn.shopify.com/s/files/1/0339/3863/6939/products/home-design_a79f3d43-8f2b-467a-88a6-f2db90bb42bc.jpg?v=1644586438'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='http://t2.gstatic.com/images?q=tbn:ANd9GcQSjk_hKsI0l6UmMJIUCs_oCtKgFfMBQ8CfwTIvTT40bnewtDmc'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://cdn.shopify.com/s/files/1/0312/6968/3245/products/7a26abfdfe6b1b0d6b58b060f874a8c97b9ffc49_1024x1024.jpg?v=1643816735'>the charms of pleasure of the moment, <img src='http://t2.gstatic.com/images?q=tbn:ANd9GcQSjk_hKsI0l6UmMJIUCs_oCtKgFfMBQ8CfwTIvTT40bnewtDmc'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://cdn.shopify.com/s/files/1/0312/6968/3245/products/7a26abfdfe6b1b0d6b58b060f874a8c97b9ffc49_1024x1024.jpg?v=1643816735'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	
+                            Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                            S2: Chiều cao 20cm – Đường kính 9cm
+                            
+                            S3: Chiều cao 25cm – Đường kính 10cm
+                            
+                            Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang4"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Commodi Consequatur<br> <b>$ 101.00 <del>$136.40</del></b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-5"><img src="anh/04-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1113">
+                        <button id="love5" data-price="79"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh6/goc1.jpg" data-goc2="anh6/goc2.jpg"
+                            data-goc3="anh6/goc3.jpg" data-goc4="anh6/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                            Ống hương thờ được làm từ chất li chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức i chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-tho-phat-a-di-da-bang-su-trang-5.jpg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-tho-phat-a-di-da-bang-su-trang-5.jpg'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-a-di-da-ngoi-hoa-sen-bang-su-6.jpg'>the charms of pleasure of the moment, <img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-a-di-da-ngoi-hoa-sen-bang-su-5.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-a-di-da-ngoi-hoa-sen-bang-su-5-768x768.jpg'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	
+                            Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                            Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                            Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                            S2: Chiều cao 20cm – Đường kính 9cm
+                            
+                            S3: Chiều cao 25cm – Đường kính 10cm
+                            
+                            Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang5"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Consectetur Hampden <br> <b>$ 79.00 <del>$87.40</del></b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-6"><img src="anh/05-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1114">
+                        <button id="love6" data-price="92"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh7/goc1.jpg" data-goc2="anh7/goc2.jpg"
+                            data-goc3="anh7/goc3.jpg" data-goc4="anh7/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                            Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó11.75-Inch long Sleeping Girl Angel Garden Statue and Beautiful Home Accent, Home and Garden Accent, Resin Stone Mix. iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='http://ecx.images-amazon.com/images/I/51vC7kuWUmL._SY450_.jpg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Beso_del_%C3%A1ngel_de_Pacciani.png/675px-Beso_del_%C3%A1ngel_de_Pacciani.png?20151208043045'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='http://ecx.images-amazon.com/images/I/81PbkARaI1L._SL1322_.jpg'>the charms of pleasure of the moment, <img src='http://ecx.images-amazon.com/images/I/81nZS1eusCL._SL1500_.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Beso_del_%C3%A1ngel_de_Pacciani.png/675px-Beso_del_%C3%A1ngel_de_Pacciani.png?20151208043045'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                            Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                            Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                            Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                            Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                            S2: Chiều cao 20cm – Đường kính 9cm
+                            
+                            S3: Chiều cao 25cm – Đường kính 10cm
+                            
+                            Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang6"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></div>
+                    <p>
+                        Exercitat Virginia <br> <b>$92.00 <del> $98.00</del></b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-7"><img src="anh/08-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1115">
+                        <button id="love7" data-price="192"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh8/goc1.jpg" data-goc2="anh8/goc2.jpg"
+                            data-goc3="anh8/goc3.jpg" data-goc4="anh8/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                            Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ hờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://images1.novica.net/pictures/4/p332608_2_400.jpg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://images1.novica.net/pictures/4/p332608_2a_400.jpg'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://images1.novica.net/pictures/4/p332608_2e_400.jpg'>the charms of pleasure of the moment, <img src='https://images1.novica.net/pictures/4/p332608_2c_400.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://images1.novica.net/pictures/4/p332608_2d_400.jpg'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	ớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                            Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                            Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                            Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                            Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                            S2: Chiều cao 20cm – Đường kính 9cm
+                            
+                            S3: Chiều cao 25cm – Đường kính 10cm
+                            
+                            Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang7"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Laborum Eveniet<br> <b>$ 190.10</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-8"><img src="anh/09-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1116">
+                        <button id="love8" data-price="103"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh9/goc1.jpg" data-goc2="anh9/goc2.jpg"
+                            data-goc3="anh9/goc3.jpg" data-goc4="anh9/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                            Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều kháAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/bunny-pop-dark-chocolate-main_360x.jpg?v=1582565527'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/dark-chocolate-bunny-with-umbrella_360x.jpg?v=1582708266'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/dark-chocolate-dove-pop-close_360x.jpg?v=1579477734'>the charms of pleasure of the moment, <img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/bunny-pop-ivory-main_360x.jpg?v=1582565730'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/dark-chocolate-cross_360x.jpg?v=1573236483'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	í trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                            Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                            Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                            Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                            Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                            S2: Chiều cao 20cm – Đường kính 9cm
+                            
+                            S3: Chiều cao 25cm – Đường kính 10cm
+                            
+                            Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang8"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></div>
+                    <p>
+                        Laudant Doloremque <br> <b>$ 103.00</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-9"><img src="anh/11-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1117">
+                        <button id="love9" data-price="114"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh10/goc1.jpg" data-goc2="anh10/goc2.jpg"
+                            data-goc3="anh10/goc3.jpg" data-goc4="anh10/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                            Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoànAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZmbvrvZbXsJxeagIgkvAOliAocKC_5bHuA5ikVhigpnKeyE6b'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO25nxN6ykwNz1wJuotE9Wcyt1l3yU8mXMxrK_S2UAv-gFF-rl'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSi-6BmGxiSdrmpQK112Lx_vqoz6qxkFseTuLbDnSy4O-kDL-lA'>the charms of pleasure of the moment, <img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6XFHvt-NZGLJTt4UEsYOLW-fKhmY_7xm3fuxj1cP6fG56FbeO'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAJm0K9nghHymGk-47pyrK_6VVc73x8oBKeH8JTK_t6D1HYOTS> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	 toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa ch- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                            Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                            Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                            Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                            Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                            S2: Chiều cao 20cm – Đường kính 9cm
+                            
+                            S3: Chiều cao 25cm – Đường kính 10cm
+                            
+                            Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang9"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Necessitatibus <br> <b>$ 114.00</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-10"><img src="anh/02-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1118">
+                        <button id="love10" data-price="201"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh11/goc1.jpg" data-goc2="anh11/goc2.jpg"
+                            data-goc3="anh11/goc3.jpg" data-goc4="anh11/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                            Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khquas<img src='https://icdn.dantri.com.vn/thumb_w/770/2022/05/18/trien-lam00014-1652842937528.jpeg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://images.fineartamerica.com/images-medium-large/organic-form-patty-sheppard.jpg'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'>the charms of pleasure of the moment, <img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'> hờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức 	An toàn sức khỏe, thâ   Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                            Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                            Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                            Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                            Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                            S2: Chiều cao 20cm – Đường kính 9cm
+                            
+                            S3: Chiều cao 25cm – Đường kính 10cm
+                            
+                            Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang10"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Nostrud Exercitation <br> <b>$ 201.00</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-11"><img src="anh/06-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1119">
+                        <button id="love11" data-price="124"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh12/goc1.jpg" data-goc2="anh12/goc2.jpg"
+                            data-goc3="anh12/goc3.jpg" data-goc4="anh12/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                            Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://t3.gstatic.com/images?q=tbn:ANd9GcThOq3JFYTyxRYXglB46CEcMZRpAYhCBcIiTmpvydS3YARep4mt'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxW_cNBRMqQWHbeeWM94QwHhJYfwLwgU4tO3nad1dtQ0vPDPfc'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRF3OO3QBA-nm_eX_LlOLrGx7bE9mvhcbdNNQUTPmhE8N8kj3ZA'>the charms of pleasure of the moment, <img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZSiTwceUZLrJ8l6NV6qVsRKkO1tKevPb0POPJatKyzlLhXC3P'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw4wT53AJAQyfbSLQlqZim0yTQqIPT_dVsVgYHBMFX6cZ_PAd'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	
+                            Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                            Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                            Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                            Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                            Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                            Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                            S2: Chiều cao 20cm – Đường kính 9cm
+                            
+                            S3: Chiều cao 25cm – Đường kính 10cm
+                            
+                            Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang11"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Occasion Praesentium <br> <b>$ 124.00</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+            </div>
+            <br>
+            <div class="thongsosanpham">
+                <i> Bộ sưu tập gốm decor cao cấp có tại Gốm Nghệ Thuật luôn đem đến quý khách hàng những cái nhìn
+                    mới
+                    lạ, đa
+                    dạng và phong phú từ hình thức, kiểu dáng đến tính năng ứng dụng trong cuộc sống. Đó là những
+                    mẫu
+                    gốm
+                    decor cao cấp gia dụng, gốm trang trí, gốm nội thất, gốm cổ...
+
+                    Không chỉ vậy, những sản phẩm gốm trang trí cao cấp được tạo hình độc đáo, với những họa tiết
+                    tinh
+                    xảo
+                    và lớp men được tráng một cách công phu sẽ tôn lên cái nét đẹp sang trọng, hiện đại của sản
+                    phẩm..</i>
+            </div>
+            <div class="hopdanhgia">
+                <video width="100%" height="100%" src="anh/videointro.mp4" controls
+                    poster="anh/Tuong-Gom-Co.jpg"></video>
+            </div>
+            <!-- <div class="hopsp30"><img src="anh/category-image1.jpg" alt=""></div> -->
+
+
+        </div>
+    </div>
+    <div class="container3">
+        <div class="main">
+            <div class="banner4">
+                <div class="cms-banner" id="cms-banner"><img id="img1" class="img activeimg" src="anh/cms-banner1.jpg"
+                        alt="">
+                    <img id="img" class="img" src="anh/cms-banner.jpg" alt="">
+                </div>
+                <div class="saleof">
+                    <h2><b>30% Save</b>
+                        <br>Latest Ceramic Art
+                    </h2>
+                    <p>There are many variations of passages of Lorem.</p>
+                </div>
+                <div class="shop-now">Shop Now</div>
+
+            </div>
+
+
+            <div class="quoter">
+                <div class="hopquoter"><img src="anh/quote.png" alt=""></div>
+                <h2>Nghe Gom Bat trang</h2>
+                <div class="hopp">
+                    <p id="p1" class="p1 activesss"> Đồ gốm nâu đỏ không tráng men (gọi một cách văn vẻ là “đồ đất
+                        nung”)
+                        được
+                        nung ở nhiệt độ
+                        xấp xỉ 950oC. Đồ gốm nâu đỏ không tráng men có thể là những bức tượng đất nhỏ bé, nhưng cũng có
+                        khi
+                        là những vật có kích thước rất lớn như những chiếc lư, những phù điêu và chi tiết trang trí trên
+                        kiến trúc. Chúng được đổ khuôn, và thường không được tráng men nhưng có một lớp “vỏ nung” bên
+                        ngoài
+                        trong suốt quá trình tạo mẫu bằng đất sét ướt trước khi đưa vào lò nung.
+                        Đôi khi trước lúc nung, ở giai đoạn làm áo, người ta trang trí màu trắng trơn hoặc nếu trang trí
+                        theo từng đoạn, người ta thực hiện trước và sau khi nung (ví dụ những bức tượng bằng đất nung
+                        Tanagra của Hy Lạp). Thỉnh thoảng, những đồ vật bằng gốm nâu đỏ không tráng men được bọc bằng
+                        một
+                        lớp vôi bám, rồi trang trí theo từng đoạn và/hoặc mạ vàng (chẳng hạn những chiếc lư ở Etruscan).
+                    </p>
+                    <p id="p2" class="p1 "> Đồ gốm là một loại vật dụng truyền thống đã tồn tại từ hàng ngàn năm nay.
+                        Được sản xuất từ đất sét và được nung chín ở nhiệt độ cao để tạo ra những đồ vật vô cùng khác
+                        biệt, đồ gốm đã trở thành một phần không thể thiếu trong cuộc sống hàng ngày của con người.
+                        Chúng có thể được tìm thấy trong nhiều hộ gia đình và những nơi sản xuất đồ gốm truyền thống
+                        trên toàn thế giới. Với các họa tiết độc đáo và màu sắc tươi sáng, đồ gốm là món quà hoàn hảo để
+                        dùng trong các bữa tiệc, tặng cho bạn bè và người thân hoặc chỉ đơn giản là để thưởng thức trong
+                        bữa ăn hàng ngày. Ngoài ra, đồ gốm cũng có thể trở thành vật trang trí mang tính thẩm mỹ cao
+                        trong các không gian sống và làm việc. Với đặc tính lành tính với môi trường, đồ gốm là sản phẩm
+                        thân thiện với tự nhiên và đóng vai trò quan trọng trong việc bảo vệ môi trường của chúng ta.
+                    </p>
+                    <p id="p3" class="p1 ">Gốm cổ truyền Việt Nam đã có cách đây sáu, bảy ngàn năm. Gốm xuất hiện trong
+                        những di chỉ thuộc văn hóa Hòa Bình, văn hóa Bắc Sơn, văn hóa Hạ Long... Rồi ta thấy trong di
+                        chỉ
+                        thuộc hậu kỳ đồ đá mới Phùng Nguyên, giai đoạn Đồng Đậu, giai đoạn Gò Mun... Đồ gốm cổ truyền
+                        nước
+                        ta đã có những bước phát triển cao và hết sức phong phú.
+
+                        Trong truyền thuyết, sự xuất hiện của đồ gốm, đồ sứ như một điều bí hiểm, linh thiêng “Đồ gốm,
+                        sứ là
+                        loại chất bột nằm sâu trong lòng đất, ở những nơi linh thiêng có ma quỷ canh giữ. Muốn khai thác
+                        được phải chọn ngày lành tháng tốt. Lên tới mặt đất, nhờ ánh sáng chói lọi của mặt trời soi dọi
+                        chất
+                        bột đó mới biến thành gốm, sứ...”
+                    </p>
+                </div>
+                <div class="nut">
+                    <div class="nut1 btnact" id="nut11111"></div>
+                    <div class="nut1" id="nut11112"></div>
+                    <div class="nut1" id="nut11113"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="main">
+            <div class="TopCategories">Image Gallery <br>
+                <div class="thanhchancuaTopCategories"></div>
+            </div>
+
+            <div class="hopthuvienhinhanh">
+                <div class="hinhanh1"><img src="anh/blog-1-893x752.jpg" alt=""></div>
+                <div class="hinhanh1"><img src="anh/blog-2-893x752.jpg" alt=""></div>
+                <div class="hinhanh1"><img src="anh/blog-3-893x752.jpg" alt=""></div>
+                <div class="hinhanh1"><img src="anh/blog-4-893x752.jpg" alt=""></div>
+                <div class="hinhanh1"><img src="anh/blog-5-893x752.jpg" alt=""></div>
+                <div class="hinhanh1"><img src="anh/blog-6-893x752.jpg" alt=""></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container5" id="container5">
+        <div class="main">
+            <div class="TopCategories">About Us<br>
+                <div class="thanhchancuaTopCategoriess"></div>
+            </div>
+            <div class="chuthuonghieu">YÊN TÂM MUA GỐM
+                SỨ BÁT TRÀNG CHÍNH HÃNG ™</div>
+            <div class="phone">PHONE ☏ <br><span> * (84) 19072004</span></div>
+            <div class="langgombattrang">LANG GOM BAT TRANG <br> <span>Là xưởng sản xuất trực tiếp các sản phẩm gốm sứ
+                    Bát Tràng với mẫu mã đa dạng, chất
+                    lượng cao, giá cạnh tranh. Ngoài ra, chúng tôi cũng kết hợp với những nghệ nhân hàng đầu tại làng
+                    gốm
+                    Bát Tràng để cung cấp những mặt hàng tốt nhất đến tay người tiêu dùng. Gốm Nghệ Thuật là một thương
+                    hiệu
+                    với chất lượng, uy tín và sự nỗ lực không ngừng nghỉ sẽ mang đến quý khách hàng không chỉ là một
+                    không
+                    gian đầy hoài niệm với những sản phẩm gốm trang trí đẹp, cao cấp mà còn tạo nên điểm nhấn độc đáo và
+                    tinh tế của nét đẹp văn hóa nghệ thuật Việt Nam thông qua những sản phẩm gốm trang trí đẹp.</span>
+            </div>
+            <div class="anhboutus1"><img src="anh/aboutus1.png" alt=""></div>
+
+
+
+
+        </div>
+    </div>
+    <div class="container6" id="container6">
+        <div class="main">
+            <div class="hoptrang">
+                <div id="hopsss" class="hopgomnghethuat">
+                    <p style=" border-bottom: 1px solid #b2bec3;">
+                        GỐM NGHỆ THUẬT </p> <br>
+                    <p>
+                        Cửa hàng Gốm KHANHCERAMIC với 30 năm uy tín là xưởng sản xuất trực tiếp các sản phẩm gốm sứ
+                        Bát
+                        Tràng với mẫu mã đa dạng, chất lượng cao, giá cạnh tranh.
+
+                        Ngoài ra, chúng tôi cũng kết hợp với những nghệ nhân hàng đầu tại làng gốm Bát Tràng để cung
+                        cấp
+                        những mặt hàng tốt nhất đến tay người tiêu dùng.
+
+                    </p>
+                    <p style=" border-bottom: 1px solid #b2bec3;"> KHANH CERAMIC </p>
+                    <P>
+                        @ Gốm Nghệ Thuật <br>
+                        -Cao Đẳng FPT POLYTECHNIC ĐÀ NẴNG <br>
+                        Tel:+84123456789 <br>
+                        Hotline: +84 123 456 789 <br>
+                        Email: KHANHPD07699@fpt.edu.vn <br>
+                        Giờ làm việc <br>
+                        T2 tới T6: Từ 8:30 tới 18:30 <br>
+                        T7 & CN: Từ 9:30 tới 17:30 <br>
+                    </P>
+                </div>
+                <div id="hopsss" class="hopgioithieu">
+                    <p style=" border-bottom: 1px solid #b2bec3;">GIỚI THIỆU</p>
+                    <br>
+                    <p>
+                        Gốm Nghệ Thuật là một thương hiệu với chất lượng, uy tín và sự nỗ lực không ngừng nghỉ sẽ
+                        mang
+                        đến
+                        quý khách hàng không chỉ là một không gian đầy hoài niệm với những sản phẩm gốm trang trí
+                        đẹp,
+                        cao
+                        cấp mà còn tạo nên điểm nhấn độc đáo và tinh tế của nét đẹp văn hóa nghệ thuật Việt Nam
+                        thông
+                        qua
+                        những sản phẩm gốm trang trí đẹp.
+                    </p>
+                </div>
+                <div id="hopsss" class="hotro">
+                    <p style=" border-bottom: 1px solid #b2bec3;">HỖ TRỢ KHÁCH HÀNG</p>
+                    <br>
+                    <p> Email: order@kiettacnghethuat.com <br>
+                        Giờ làm việc <br>
+                        T2 tới T6: Từ 8:30 tới 18:30 <br>
+                        T7 & CN: Từ 9:30 tới 17:30
+                    </p>
+                </div>
+                <div id="hopsss" class="ketnoi">
+                    <p style=" border-bottom: 1px solid #b2bec3;">
+                        KẾT NỐI VỚI CHÚNG TÔI
+
+                    </p>
+                    <br>
+                    <div class="video">
+                        <img src="anh/outro.gif" alt="">
+                    </div> <br>
+                    <i> Gốm Nghệ Thuật là một thương hiệu với chất lượng, uy tín và sự nỗ lực không ngừng nghỉ</i>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <script src="thumucyeuthich.js"></script>
+    <script src="hieuung.js"></script>
+    <script src="allslideshow.js"></script>
+
+
+    <script src="chitietsanpham1.js"></script>
+    <script src="center.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="tranggiohang.css">
+    <link rel="stylesheet" href="link.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Tillana&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Rubik+Pixels&family=Tillana&display=swap');
+    </style>
+    <title>GIỎ HÀNG - KHANHCERAMIC</title>
+</head>
+
+<body>
+    <div id="hoplen" class="hoplen"><ion-icon id="len" class="len" name="arrow-up-outline"></ion-icon></div>
+    <div class="iconmenu" id="iconmenu"><ion-icon name="menu-outline"></ion-icon></div>
+    <div class="hopmenu" id="hopmenu">
+        <div class="iconmenu1" id="iconmenu1"> <ion-icon name="menu-outline"></ion-icon></div>
+        <ul style="z-index: 5;" class="menungang1">
+
+            <span class="home"><a href="home.html">KHANH CERAMIC.</a></span>
+            <li class="home1" id="vitri1"><a href="home.html">HOME</a></li>
+            <li class="sanpham"><a href="thumucsanpham.html">PRODUCT</a></li>
+            <li id="vitri5"><a href="home.html">ABOUT</a></li>
+            <li id="vitri6"><a href="home.html">CONTACT</a></li>
+            <li class="home4" id="vitri77"><a href="trangmuchinhanh.html">PICTURES</a></li>
+
+            <li>YOUR ACCOUNT <ion-icon name="person-circle-outline"></ion-icon></li>
+            <li><a href="tranggiohang.html">YOUR CART <ion-icon name="cart-outline"></ion-icon></a></li>
+            <li id="timkiem">
+                <a href="timkiemsanpham.html">TÌM KIẾM SẢN PHẨM <ion-icon id="timkiem"
+                        name="search-outline"></ion-icon></a>
+            </li>
+            <li><a href="tranmucyeuthich.html">THƯ MỤC YÊU
+                    THÍCH<ion-icon id="thumucyeuthich" name="heart-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+
+    <div id="thongbaosanphamvaoyeuthich" class="chuthongbaoyeuthich">Đã xóa sản phẩm khỏi giỏ hàng
+        <ion-icon style="color: red;" name="heart-like-outline"></ion-icon> <br>
+        <button style="padding: 3px;background-color:   #34495e;border-radius: 5px; font-size: 15px;" id="favorites"><a
+                style="color: aliceblue;" href="home.html">GO TO HOME</a>
+            <ion-icon name="log-out-outline"></ion-icon></button>
+    </div>
+
+
+    <div id="hoptinhtien">
+        <fieldset>
+            <legend>Thanh Toán Hóa Đơn </legend>
+            <form>
+                <input onchange="checkTen();" type="text" id="name" placeholder="Nhập họ tên :...">
+                <div id="saiten"></div> <br>
+                <input onchange="checkSdt();" type="text" id="sdt" placeholder="Nhập số điện thoại :...">
+                <div id="saisodienthoai"></div> <br>
+                <input type="text" onchange="checkDiaChi();" id="diachi" placeholder="Nhập địa chỉ :...">
+                <div id="saidiachi"></div>
+                <div id="thanhtoans"></div>
+
+                <input type="button" id="huybo" value="Hủy Bỏ tác Vụ"> <input type="button" id="xacnhan"
+                    value="Xác Nhận Thanh Toán">
+                <input type="reset" value="Xóa Nhập lại">
+                </input>
+            </form>
+        </fieldset>
+    </div>
+
+
+    <div class="nav" id="nav">
+        <ul style="z-index: 5;">
+            <li class="home"><a href="home.html">KHANH CERAMIC.</a></li>
+            <li class="home1"><a href="home.html">HOME</a></li>
+            <li class="sanpham"><a href="thumucsanpham.html">PRODUCT</a></li>
+            <li class="home2" id="vitri55"><a href="home.html">ABOUT</a></li>
+            <li class="home3" id="vitri66"><a href="home.html">CONTACT</a></li>
+            <li class="home4" id="vitri77"><a href="trangmuchinhanh.html">PICTURES</a></li>
+
+            <li><ion-icon name="person-circle-outline"></ion-icon></li>
+            <li> <small style="z-index: 9;color: #2d3436;font-size: 25px" id="tongsanpham"></small><a
+                    href="tranggiohang.html">
+                    <ion-icon style=" background-color: #2d3436 ; padding: 10px; border-radius: 10px;color: white;;"
+                        name="cart-outline"></ion-icon>
+
+                </a></li>
+            <li id="timkiem">
+                <a href="timkiemsanpham.html"> <ion-icon id="timkiem" name="search-outline"></ion-icon></a>
+            </li>
+            <li><a href="tranmucyeuthich.html"><ion-icon id="thumucyeuthich" name="heart-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <div class="hopchuaanh"><img id="anhhhhh" src="anh/banner0.jpg" alt=""></div>
+        <div class="hopnut0000" id="hopnut0000">
+            <div class="nut01 hello" id="nut01"></div>
+            <div class="nut02" id="nut02"></div>
+            <div class="nut03" id="nut03"></div>
+            <div class="nut04" id="nut04"></div>
+        </div>
+        <div id="thanhtrai" class="thanhtrai"><ion-icon name="arrow-back-outline"></ion-icon></div>
+        <div class="thanhphai" id="thanhphai"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+
+    </div>
+    <div class="chu"><span style="font-size: 30px; font-family: 'Rubik Pixels', cursive;"> " KHANHCERAMIC "</span> is
+        a trusted brand for quality ceramic products that seamlessly blend aesthetics with functionality....</div>
+
+
+    <div class="container1">
+        <div class="hoptrai">
+
+
+
+            <div id="hopthongbaoyeuthichtontai"><a href="thumucsanpham.html">Bạn Chưa Thêm Sản Phẩm Nào vào giỏ hàng -
+                    <span style="text-decoration: underline;"> đi đến trang sản phẩm </span></a><ion-icon
+                    name="alert-circle-outline"></ion-icon></div>
+            <div class="hopgiohang" id="hopgiohang">
+
+            </div>
+            <div id="tongtiencanthanhtoan"></div>
+            <div id="hopthoigiansale"> <ion-icon name="hourglass-outline"></ion-icon> Thời Gian Sale Còn lại : </div>
+            <div id="hopsale">
+                <!-- hộp sale ở đây -->
+            </div>
+
+
+        </div>
+        <div class="hopphai">
+            <div class="hopchuchay">
+                <h3> <ion-icon name="notifications-circle-outline"> </ion-icon>
+                    Notification Products </h3>
+                <h3 id="dong"> <ion-icon name="open-outline"></ion-icon>
+                    OPEN / CLOSE</h3>
+
+                <p class="hopchuchays">
+                    <marquee direction="up">Đồ gốm <span style="font-size: 30px; font-family: 'Rubik Pixels', cursive;">
+                            " KHANHCERAMIC "</span> là một trong những thương hiệu đồ gốm nổi tiếng tại Việt Nam. Sản
+                        phẩm
+                        của Hải Ceramic được làm từ nguồn đất sét đặc biệt, được khai thác từ miền Nam Việt Nam.
+                        <img style="border-radius: 10px;" src="anh/blog-2-893x752.jpg" alt=""> Đặc
+                        biệt, đội ngũ nghệ nhân làm đồ gốm của Hải Ceramic đã truyền qua nhiều thế hệ, nên sản phẩm
+                        của
+                        họ luôn đảm bảo chất lượng và có giá trị nghệ thuật cao.
+                        <img style="border-radius: 10px;" src="anh/blog-4-893x752.jpg" alt="">
+                        Các sản phẩm của Hải Ceramic đều được làm thủ công, từng sản phẩm đều được tạo ra cẩn thận,
+                        từng
+                        chi tiết nhỏ đều được chăm chút kỹ lưỡng.
+                        <img style="border-radius: 10px;" src="anh/blog-5-893x752.jpg" alt=""> Hải Ceramic cung cấp
+                        cho
+                        khách hàng những sản phẩm đồ
+                        gốm đa dạng, từ dụng cụ nấu nướng cho đến quà tặng, đồ trang trí nhà cửa,….
+                        <img style="border-radius: 10px;" src="anh/blog-6-893x752.jpg" alt="">
+                        Nếu bạn đang tìm kiếm những sản phẩm đồ gốm đẹp và chất lượng, Hải Ceramic chắc chắn là một
+                        trong những lựa chọn hàng đầu của bạn. Sản phẩm của Hải Ceramic cũng là món quà ý nghĩa và
+                        độc
+                        <img style="border-radius: 10px;" src="anh/blog-1-893x752.jpg" alt="">
+                        đáo để tặng cho người thân, bạn bè hoặc đối tác trong các dịp đặc biệt.
+                    </marquee>
+                </p>
+
+            </div>
+
+            <div class="hopdanhgiasanpham">
+                <h3> <ion-icon name="star-outline"></ion-icon> Hãy Đánh Giá Sản Phẩm Của Chúng Tôi</h3>
+                <form>
+                    <label for="product-name">Tên sản phẩm:</label>
+                    <input type="text" id="product-name" name="product-name" placeholder="vd: bình gốm sứ "><br>
+
+                    <label for="rating">Đánh giá sản phẩm:</label>
+                    <select id="rating" name="rating">
+                        <option value="5">5 sao</option>
+                        <option value="4">4 sao</option>
+                        <option value="3">3 sao</option>
+                        <option value="2">2 sao</option>
+                        <option value="1">1 sao</option>
+                    </select><br>
+
+                    <label for="review">Đánh giá chi tiết:</label><br>
+                    <textarea id="review" name="review"
+                        placeholder="Hãy Viết Đánh Giá Chi Tiết ủa bạn vào Đây ...."></textarea><br>
+
+                    <input type="button" value="Gửi đánh giá">
+                </form>
+            </div>
+
+            <div class="hopchatluong">
+                <img src="anh/banner4.jpg" alt="">
+            </div>
+            <div class="hopvideo">
+                <h3> <ion-icon name="at-outline"></ion-icon>
+                    Thương Hiệu Của Chúng tôi </h3>
+                <div class="img"><img src="anh/aboutus1.png" alt=""></div>
+            </div>
+
+            <div class="hopsanpham1">
+                <h3> <ion-icon name="grid-outline"></ion-icon> Danh Mục Sản Phẩm</h3>
+                <ul>
+                    <li><a href="">ĐỒ THỜ BÁT TRÀNG <ion-icon name="log-out-outline"></ion-icon>
+                        </a></li>
+                    <li><a href="">LỌ HOA BÁT TRÀNG</a> <ion-icon name="log-out-outline"></ion-icon>
+                    </li>
+                    <li><a href="">BÁT ĐĨA BÁT TRÀNG</a> <ion-icon name="log-out-outline"></ion-icon>
+                    </li>
+                    <li><a href="">ẤM CHÉN BÁT TRÀNG</a> <ion-icon name="log-out-outline"></ion-icon>
+                    </li>
+                    <li><a href="">LỌ LỘC BÌNH</a> <ion-icon name="log-out-outline"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hopanh11_1">
+                <img src="anh/chum-ruou-hu-gao-gom-su-bat-trang-banner.jpg" alt="">
+            </div>
+            <div class="hopanh11_1">
+                <img src="anh/banner4.jpg" alt="">
+            </div>
+            <div class="hopanh11_1">
+                <img src="anh/banner5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container6" id="container6">
+        <div id="hops" class="hopgomnghethuat">
+            <p style=" border-bottom: 1px solid #b2bec3;">
+                GỐM NGHỆ THUẬT </p> <br>
+            <p>
+                Cửa hàng Gốm HAICERAMIC với 30 năm uy tín là xưởng sản xuất trực tiếp các sản phẩm gốm sứ
+                Bát
+                Tràng với mẫu mã đa dạng, chất lượng cao, giá cạnh tranh.
+
+                Ngoài ra, chúng tôi cũng kết hợp với những nghệ nhân hàng đầu tại làng gốm Bát Tràng để cung
+                cấp
+                những mặt hàng tốt nhất đến tay người tiêu dùng.
+
+            </p>
+            <p style=" border-bottom: 1px solid #b2bec3;"> KHANH CERAMIC </p>
+            <P>
+                @ Gốm Nghệ Thuật <br>
+                -Cao Đẳng FPT POLYTECHNIC ĐÀ NẴNG <br>
+                Tel:+84123456789 <br>
+                Hotline: +84 123 456 789 <br>
+                Email: KHANHDHPD07699@fpt.edu.com <br>
+                Giờ làm việc <br>
+                T2 tới T6: Từ 8:30 tới 18:30 <br>
+                T7 & CN: Từ 9:30 tới 17:30 <br>
+            </P>
+        </div>
+        <div id="hops" class="hopgioithieu">
+            <p style=" border-bottom: 1px solid #b2bec3;">GIỚI THIỆU</p>
+            <br>
+            <p>
+                Gốm Nghệ Thuật là một thương hiệu với chất lượng, uy tín và sự nỗ lực không ngừng nghỉ sẽ
+                mang
+                đến
+                quý khách hàng không chỉ là một không gian đầy hoài niệm với những sản phẩm gốm trang trí
+                đẹp,
+                cao
+                cấp mà còn tạo nên điểm nhấn độc đáo và tinh tế của nét đẹp văn hóa nghệ thuật Việt Nam
+                thông
+                qua
+                những sản phẩm gốm trang trí đẹp.
+            </p>
+        </div>
+        <div id="hops" class="hotro">
+            <p style=" border-bottom: 1px solid #b2bec3;">HỖ TRỢ KHÁCH HÀNG</p>
+            <br>
+            <p> Email: order@kiettacnghethuat.com <br>
+                Giờ làm việc <br>
+                T2 tới T6: Từ 8:30 tới 18:30 <br>
+                T7 & CN: Từ 9:30 tới 17:30
+            </p>
+        </div>
+        <div id="hops" class="ketnoi">
+            <p style=" border-bottom: 1px solid #b2bec3;">
+                KẾT NỐI VỚI CHÚNG TÔI
+
+            </p>
+            <br>
+            <div class="video">
+                <img src="anh/outro.gif" alt="">
+            </div> <br>
+            <i> Gốm Nghệ Thuật là một thương hiệu với chất lượng, uy tín và sự nỗ lực không ngừng nghỉ</i>
+
+        </div>
+
+    </div>
+
+    <script src="giohang.js"></script>
+    <script src="chitietsanpham.js"></script>
+    <script src="sulihieuungchung.js"></script>
+
+    <script src="tongtien.js"></script>
+
+
+</body>
+
+</html>

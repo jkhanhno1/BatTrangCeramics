@@ -1,0 +1,175 @@
+/* xử lí hiệu ứng cho phần cuộn lên */
+.hoplenhienra {
+    display: block;
+    opacity: 0.6;
+    visibility: visible;
+    animation: hienra 1s forwards;
+    transform: scale(0);cursor: pointer;
+}
+
+@-webkit-keyframes hienra {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+/* xử lí hiệu ứng cho phần cuộn lên */
+.lenmauxanh {
+    color: white;
+    background-color: gray;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: 5;
+}
+
+/* xử lí hiệu ứng cho phần cuộn lên */
+
+
+
+
+.TopCategories:hover>div{
+    width: 60%;
+    left: 20%;
+
+}
+
+.anhien{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+.iconmenuhienra{
+  
+    transform: translateX(0);
+}
+.iconmenu1{
+    position: absolute;
+    right: 1%;
+    top: 0%;
+    font-size: 40px;
+    width: 40px;
+}
+.zoomdam{
+    transition: 1s;
+   transform: rotate(360deg);
+   height: 40px;
+   opacity: 1;
+   color: #c0392b;
+}
+.daira{
+    animation: 4s daira forwards;
+}
+@-webkit-keyframes daira{
+    0%{
+        width: 10%;
+        opacity: 0;
+      
+    }
+    50%{
+        width: 70%;
+        left: 15%;
+        background-color:  #c0392b; ;
+    }
+    100%{
+        width: 10%;
+        left: 45%;
+        background-color: #c0392b;
+    }
+}
+#thanh1s{
+    width: 5%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 90%;
+    transition: 2s all;
+}
+#thanh2s{
+    width: 5%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 80%;
+    right: 0;
+    transition: 2s all;
+}
+.hopgioithieu1{
+    transition: 1s all;
+    animation: 1s hienra11 forwards;
+   
+}
+@-webkit-keyframes hienra11 {
+    0%{
+    transform :translateY(-10px) ;
+    }
+   
+    100%{
+        opacity: 1;
+        transform :translateY(0px) ;
+    }
+}
+.hello{
+    background-color: rgba(28, 8, 8, 0.408);
+    transition: 1s all;
+    transform: scale(0.5) !important;
+   
+}
+.hopchuadanhmuc111{
+    text-align: right;
+}
+.hopsp30>div>button{
+    font-size: 30px;
+    margin: 5px;
+    border: 0;
+    text-align: right;
+    background-color: rgba(240, 248, 255, 0);
+}
+.md{
+    transition: 0.4s all;
+}
+.md:hover{
+    transform: scale(1.1);
+ color: #0984e3;
+
+}
+.img{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+.activeimg{
+
+    animation: 2s hiento forwards;
+}
+@-webkit-keyframes hiento{
+  0%{
+    
+    opacity: 0;
+    visibility: hidden;
+  }
+  100%{
+    
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.thongsosanphamsss{
+    animation: 1s thongsosanpham forwards;
+}
+@-webkit-keyframes thongsosanpham{
+    0%{
+        opacity: 0;
+        visibility:hidden;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        visibility:visible;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="trangmucsanpham.css">
+    <link rel="stylesheet" href="link.css">
+    <style>
+        .hopsp30 {
+            display: none;
+        }
+
+        #search-input {
+            width: 80%;
+            margin: 15px 10%;
+            padding: 5px;
+            border: 0;
+            background-color: #b2bec3;
+            color: black;
+            font-size: 25px;
+            border-radius: 5px;
+        }
+
+        .thumucyeuthich {
+            width: 90%;
+            left: 5%;
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Tillana&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Rubik+Pixels&family=Tillana&display=swap');
+    </style>
+    <title> TÌM KIẾM SẢN PHẨM - KHANH CERAMIC</title>
+</head>
+
+<body>
+    <div id="hoplen" class="hoplen"><ion-icon id="len" class="len" name="arrow-up-outline"></ion-icon></div>
+    <div class="iconmenu" id="iconmenu"><ion-icon name="menu-outline"></ion-icon></div>
+    <div class="hopmenu" id="hopmenu">
+        <div class="iconmenu1" id="iconmenu1"> <ion-icon name="menu-outline"></ion-icon></div>
+        <ul style="z-index: 5;" class="menungang1">
+
+            <span class="home"><a href="home.html">KHANH CERAMIC.</a></span>
+            <li class="home1" id="vitri1"><a href="home.html">HOME</a></li>
+            <li class="sanpham"><a href="thumucsanpham.html">PRODUCT</a></li>
+            <li id="vitri5"><a href="home.html">ABOUT</a></li>
+            <li id="vitri6"><a href="home.html">CONTACT</a></li>
+            <li class="home4" id="vitri77"><a href="trangmuchinhanh.html">PICTURES</a></li>
+
+            <li>YOUR ACCOUNT <ion-icon name="person-circle-outline"></ion-icon></li>
+            <li><a href="tranggiohang.html">YOUR CART <ion-icon name="cart-outline"></ion-icon></a></li>
+            <li id="timkiem">
+                <a href="timkiemsanpham.html">TÌM KIẾM SẢN PHẨM <ion-icon id="timkiem"
+                        name="search-outline"></ion-icon></a>
+            </li>
+            <li><a href="tranmucyeuthich.html">THƯ MỤC YÊU
+                    THÍCH<ion-icon id="thumucyeuthich" name="heart-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+
+
+
+    <div id="thongbaosanphamvaoyeuthich" class="chuthongbaoyeuthich">Đã thêm Sản Phẩm vào Danh mục yêu thích
+        <ion-icon style="color: red;" name="heart-like-outline"></ion-icon> <br>
+        <button style="padding: 3px;background-color:   #34495e;border-radius: 5px; font-size: 15px;" id="favorites"><a
+                style="color: aliceblue;" href="tranmucyeuthich.html">GO TO FAVORITES</a>
+            <ion-icon name="log-out-outline"></ion-icon></button>
+    </div>
+    <div id="giohangssss" class="giohangssss">Đã thêm Sản Phẩm vào giỏ hàng
+        <ion-icon style="color: red;" name="heart-like-outline"></ion-icon> <br>
+        <button style="padding: 3px;background-color:   #34495e;border-radius: 5px; font-size: 15px;" id="favorites"><a
+                style="color: aliceblue;" href="tranmucyeuthich.html">GO TO CART</a>
+            <ion-icon name="log-out-outline"></ion-icon></button>
+    </div>
+
+
+    <div class="nav" id="nav">
+        <ul>
+            <li class="home"><a href="home.html">KHANH CERAMIC.</a></li>
+            <li class="home1"><a href="home.html">HOME</a></li>
+            <li class="sanpham"><a href="thumucsanpham.html">PRODUCT</a></li>
+            <li class="home2" id="vitri55"><a href="home.html">ABOUT</a></li>
+            <li class="home3" id="vitri66"><a href="home.html">CONTACT</a></li>
+            <li class="home4" id="vitri77"><a href="trangmuchinhanh.html">PICTURES</a></li>
+
+            <li><ion-icon name="person-circle-outline"></ion-icon></li>
+            <li id="giohang"><a href="tranggiohang.html"><ion-icon name="cart-outline"></ion-icon>
+                    <p id="tongsanpham"></p>
+                </a></li>
+            <li style="background-color: #2d3436 ; padding: 10px; border-radius: 10px;color: white;" id="timkiem">
+                <a style="color: white;" href="timkiemsanpham.html"> <ion-icon id="timkiem"
+                        name="search-outline"></ion-icon></a>
+            </li>
+            <li><a href="tranmucyeuthich.html"><ion-icon id="thumucyeuthich" name="heart-outline"></ion-icon></a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <div class="hopchuaanh"><img id="anhhhhh" src="anh/banner0.jpg" alt=""></div>
+        <div class="hopnut0000" id="hopnut0000">
+            <div class="nut01 hello" id="nut01"></div>
+            <div class="nut02" id="nut02"></div>
+            <div class="nut03" id="nut03"></div>
+            <div class="nut04" id="nut04"></div>
+        </div>
+        <div id="thanhtrai" class="thanhtrai"><ion-icon name="arrow-back-outline"></ion-icon></div>
+        <div class="thanhphai" id="thanhphai"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+
+    </div>
+    <div class="chu"><span style="font-size: 30px; font-family: 'Rubik Pixels', cursive;"> " KHANHCERAMIC "</span> is
+        a trusted brand for quality ceramic products that seamlessly blend aesthetics with functionality....</div>
+
+
+    <div class="container1">
+        <div class="hoptrai">
+
+
+
+
+
+
+
+            <div class="thumucyeuthich">
+                TÌM KIÊM SẢN PHẨM <ion-icon name="search-circle-outline"></ion-icon>
+            </div>
+            <input type="text" id="search-input" onchange="searchProducts()"
+                placeholder="Tìm kiếm Theo Tên và theo giá sản phẩm...">
+
+
+
+            <div id="hopsanpham1111">
+
+                <div class="hopsp30" id="hopsp30-3">
+                    <img src="anh/02-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1111">
+                        <button id="love3" data-price="104"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh4/goc1.jpg" data-goc2="anh4/goc2.jpg"
+                            data-goc3="anh4/goc3.jpg" data-goc4="anh4/goc4.jpg"
+                            data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                                Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                                Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                                Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                                Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                                Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                                S2: Chiều cao 20cm – Đường kính 9cm
+                                
+                                S3: Chiều cao 25cm – Đường kính 10cm
+                                
+                                Số lượng gia công	Theo yêu cầu
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://icdn.dantri.com.vn/thumb_w/770/2022/05/18/trien-lam00014-1652842937528.jpeg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://images.fineartamerica.com/images-medium-large/organic-form-patty-sheppard.jpg'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'>the charms of pleasure of the moment, <img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	"
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang3"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+
+
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></div>
+                    <p>Accusantium Doloremque <br> <b>$ 104.00</b></p>
+                    <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-4">
+                    <img src="anh/03-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1112">
+                        <button id="love4" data-price="101"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh5/goc1.jpg" data-goc2="anh5/goc2.jpg"
+                            data-goc3="anh5/goc3.jpg" data-goc4="anh5/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                                Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bài chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết   hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức i chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức i chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức n thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                                Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                                Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                                Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://cdn.shopify.com/s/files/1/0339/3863/6939/products/home-design_a79f3d43-8f2b-467a-88a6-f2db90bb42bc.jpg?v=1644586438'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='http://t2.gstatic.com/images?q=tbn:ANd9GcQSjk_hKsI0l6UmMJIUCs_oCtKgFfMBQ8CfwTIvTT40bnewtDmc'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://cdn.shopify.com/s/files/1/0312/6968/3245/products/7a26abfdfe6b1b0d6b58b060f874a8c97b9ffc49_1024x1024.jpg?v=1643816735'>the charms of pleasure of the moment, <img src='http://t2.gstatic.com/images?q=tbn:ANd9GcQSjk_hKsI0l6UmMJIUCs_oCtKgFfMBQ8CfwTIvTT40bnewtDmc'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://cdn.shopify.com/s/files/1/0312/6968/3245/products/7a26abfdfe6b1b0d6b58b060f874a8c97b9ffc49_1024x1024.jpg?v=1643816735'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	
+                                Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                                S2: Chiều cao 20cm – Đường kính 9cm
+                                
+                                S3: Chiều cao 25cm – Đường kính 10cm
+                                
+                                Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang4"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Commodi Consequatur<br> <b>$ 101.00 <del>$136.40</del></b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-5"><img src="anh/04-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1113">
+                        <button id="love5" data-price="79"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh6/goc1.jpg" data-goc2="anh6/goc2.jpg"
+                            data-goc3="anh6/goc3.jpg" data-goc4="anh6/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                                Ống hương thờ được làm từ chất li chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức i chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-tho-phat-a-di-da-bang-su-trang-5.jpg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-tho-phat-a-di-da-bang-su-trang-5.jpg'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-a-di-da-ngoi-hoa-sen-bang-su-6.jpg'>the charms of pleasure of the moment, <img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-a-di-da-ngoi-hoa-sen-bang-su-5.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://phongthuyphatloc.vn/wp-content/uploads/2020/08/tuong-a-di-da-ngoi-hoa-sen-bang-su-5-768x768.jpg'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	
+                                Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                                Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                                Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                                S2: Chiều cao 20cm – Đường kính 9cm
+                                
+                                S3: Chiều cao 25cm – Đường kính 10cm
+                                
+                                Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang5"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Consectetur Hampden <br> <b>$ 79.00 <del>$87.40</del></b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-6"><img src="anh/05-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1114">
+                        <button id="love6" data-price="92"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh7/goc1.jpg" data-goc2="anh7/goc2.jpg"
+                            data-goc3="anh7/goc3.jpg" data-goc4="anh7/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                                Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó11.75-Inch long Sleeping Girl Angel Garden Statue and Beautiful Home Accent, Home and Garden Accent, Resin Stone Mix. iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='http://ecx.images-amazon.com/images/I/51vC7kuWUmL._SY450_.jpg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Beso_del_%C3%A1ngel_de_Pacciani.png/675px-Beso_del_%C3%A1ngel_de_Pacciani.png?20151208043045'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='http://ecx.images-amazon.com/images/I/81PbkARaI1L._SL1322_.jpg'>the charms of pleasure of the moment, <img src='http://ecx.images-amazon.com/images/I/81nZS1eusCL._SL1500_.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Beso_del_%C3%A1ngel_de_Pacciani.png/675px-Beso_del_%C3%A1ngel_de_Pacciani.png?20151208043045'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                                Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                                Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                                Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                                Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                                S2: Chiều cao 20cm – Đường kính 9cm
+                                
+                                S3: Chiều cao 25cm – Đường kính 10cm
+                                
+                                Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang6"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></div>
+                    <p>
+                        Exercitat Virginia <br> <b>$92.00 <del> $98.00</del></b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-7"><img src="anh/08-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1115">
+                        <button id="love7" data-price="190"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh8/goc1.jpg" data-goc2="anh8/goc2.jpg"
+                            data-goc3="anh8/goc3.jpg" data-goc4="anh8/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                                Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ hờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://images1.novica.net/pictures/4/p332608_2_400.jpg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://images1.novica.net/pictures/4/p332608_2a_400.jpg'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://images1.novica.net/pictures/4/p332608_2e_400.jpg'>the charms of pleasure of the moment, <img src='https://images1.novica.net/pictures/4/p332608_2c_400.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://images1.novica.net/pictures/4/p332608_2d_400.jpg'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	ớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                                Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                                Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                                Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                                Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                                S2: Chiều cao 20cm – Đường kính 9cm
+                                
+                                S3: Chiều cao 25cm – Đường kính 10cm
+                                
+                                Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang7"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Laborum Eveniet<br> <b>$ 190.10</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-8"><img src="anh/09-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1116">
+                        <button id="love8" data-price="103"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh9/goc1.jpg" data-goc2="anh9/goc2.jpg"
+                            data-goc3="anh9/goc3.jpg" data-goc4="anh9/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                                Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều kháAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/bunny-pop-dark-chocolate-main_360x.jpg?v=1582565527'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/dark-chocolate-bunny-with-umbrella_360x.jpg?v=1582708266'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/dark-chocolate-dove-pop-close_360x.jpg?v=1579477734'>the charms of pleasure of the moment, <img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/bunny-pop-ivory-main_360x.jpg?v=1582565730'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://cdn.shopify.com/s/files/1/0256/4970/9138/products/dark-chocolate-cross_360x.jpg?v=1573236483'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	í trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                                Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                                Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                                Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                                Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                                S2: Chiều cao 20cm – Đường kính 9cm
+                                
+                                S3: Chiều cao 25cm – Đường kính 10cm
+                                
+                                Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang8"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon name="star-outline"></div>
+                    <p>
+                        Laudant Doloremque <br> <b>$ 103.00</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-9"><img src="anh/11-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1117">
+                        <button id="love9" data-price="114"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh10/goc1.jpg" data-goc2="anh10/goc2.jpg"
+                            data-goc3="anh10/goc3.jpg" data-goc4="anh10/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                                Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoànAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZmbvrvZbXsJxeagIgkvAOliAocKC_5bHuA5ikVhigpnKeyE6b'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSO25nxN6ykwNz1wJuotE9Wcyt1l3yU8mXMxrK_S2UAv-gFF-rl'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSi-6BmGxiSdrmpQK112Lx_vqoz6qxkFseTuLbDnSy4O-kDL-lA'>the charms of pleasure of the moment, <img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6XFHvt-NZGLJTt4UEsYOLW-fKhmY_7xm3fuxj1cP6fG56FbeO'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAJm0K9nghHymGk-47pyrK_6VVc73x8oBKeH8JTK_t6D1HYOTS> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	 toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa ch- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                                Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                                Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                                Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                                Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                                S2: Chiều cao 20cm – Đường kính 9cm
+                                
+                                S3: Chiều cao 25cm – Đường kính 10cm
+                                
+                                Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang9"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Necessitatibus <br> <b>$ 114.00</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-10"><img src="anh/02-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1118">
+                        <button id="love10" data-price="201"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh11/goc1.jpg" data-goc2="anh11/goc2.jpg"
+                            data-goc3="anh11/goc3.jpg" data-goc4="anh11/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                                Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khquas<img src='https://icdn.dantri.com.vn/thumb_w/770/2022/05/18/trien-lam00014-1652842937528.jpeg'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://images.fineartamerica.com/images-medium-large/organic-form-patty-sheppard.jpg'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'>the charms of pleasure of the moment, <img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://toquoc.mediacdn.vn/280518851207290880/2022/5/18/ch2-1652842286103507627631.jpg'> hờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức 	An toàn sức khỏe, thâ   Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.Thông số kỹ thuật
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                                Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                                Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                                Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                                Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                                S2: Chiều cao 20cm – Đường kính 9cm
+                                
+                                S3: Chiều cao 25cm – Đường kính 10cm
+                                
+                                Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang10"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Nostrud Exercitation <br> <b>$ 201.00</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-11"><img src="anh/06-278x320.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc1119">
+                        <button id="love11" data-price="124"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh12/goc1.jpg" data-goc2="anh12/goc2.jpg"
+                            data-goc3="anh12/goc3.jpg" data-goc4="anh12/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé.Đặc điểm sản phẩm
+                                Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọAt vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://t3.gstatic.com/images?q=tbn:ANd9GcThOq3JFYTyxRYXglB46CEcMZRpAYhCBcIiTmpvydS3YARep4mt'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxW_cNBRMqQWHbeeWM94QwHhJYfwLwgU4tO3nad1dtQ0vPDPfc'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRF3OO3QBA-nm_eX_LlOLrGx7bE9mvhcbdNNQUTPmhE8N8kj3ZA'>the charms of pleasure of the moment, <img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZSiTwceUZLrJ8l6NV6qVsRKkO1tKevPb0POPJatKyzlLhXC3P'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpw4wT53AJAQyfbSLQlqZim0yTQqIPT_dVsVgYHBMFX6cZ_PAd'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.	
+                                Tên	Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay	Nguồn gốc	Gia Lâm- Bát Tràng- Hà Nội
+                                Mã số	BT-OH03	Đặc tính	An toàn sức khỏe, thân thiện môi trường
+                                Chế tác	Vẽ tay	Bao bì	Đóng hộp carton, hộp xi theo yêu cầu
+                                Họa tiết	Hoa sen	Quy chuẩn kỹ thuật	QCVN12-4:2015/BYT
+                                Chất liệu	Men lam đậm	Thương hiệu	Bát Tràng
+                                Kích thước	S1: Chiều cao 18cm – Đường kính 8cm
+                                S2: Chiều cao 20cm – Đường kính 9cm
+                                
+                                S3: Chiều cao 25cm – Đường kính 10cm
+                                
+                                Số lượng gia công	Theo yêu cầu" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang11"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Occasion Praesentium <br> <b>$ 124.00</b>
+                    </p> <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                </div>
+                <div class="anh11 hopsp30" id="anh11"><img id="anh111" src="anh/category-image1.jpg" alt="">
+                    <div id="hopmo"></div>
+                    <div id="brank1" data-brank="Ceramic Flower Vase"></div>
+                    <div class="hopchuadanhmuc">
+                        <button id="love0" data-price="104"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh1/goc1.jpg" data-goc2="anh1/goc2.jpg"
+                            data-goc3="anh1/goc3.jpg" data-goc4="anh1/goc4.jpg"
+                            data-chitiet="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci <img src='https://wowlavie-aws.hmgcdn.com/file/article_all/A1529034894.jpg' > velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, <img src='https://wowlavie-aws.hmgcdn.com/file/article_all/A1529054185.jpg'>  nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint <img src='https://wowlavie-aws.hmgcdn.com/file/article_all/A1529054319.jpg'> occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda <img src='https://wowlavie-aws.hmgcdn.com/file/article_all/A1529055313.jpg'>est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang0"><ion-icon name="bag-add-outline"></ion-icon></button>
+
+
+                        <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                        <p>Accusantium Doloremque <br> <b>$ 104.00</b></p>
+                        <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                    </div>
+                </div>
+
+                <div class="anh11 hopsp30" id="anh22"><img id="anh222" src="anh/category-image2.jpg" alt="">
+                    <div id="brank2" data-brank="Ceramic Modern Art"></div>
+                    <div class="hopchuadanhmuc1">
+                        <button id="love1" data-price="104"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh2/goc1.jpg" data-goc2="anh2/goc2.jpg"
+                            data-goc3="anh2/goc3.jpg" data-goc4="anh2/goc4.jpg"
+                            data-chitiet="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore <img src='https://cdn.shopify.com/s/files/1/1865/9309/products/XL-white-deer1_360x.JPG?v=1570887087'> et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui <img src='https://cdn.shopify.com/s/files/1/1865/9309/products/large_white_deer_head__28423.1381354133_360x.jpg?v=1570887241'> ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, <img src='https://cdn.shopify.com/s/files/1/1865/9309/products/large_white_deer_head__28423.1381354133_360x.jpg?v=1570887241'> nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble  <img src='https://cdn.shopify.com/s/files/1/1865/9309/products/mini-white-deer-head-gold-antlers-1_360x.JPG?v=1556052401'>that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple<img src='https://cdn.shopify.com/s/files/1/1865/9309/products/deer-skull-mini-white-gold-antlers-1_360x.jpg?v=1507816916'> and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain<img src='https://cdn.shopify.com/s/files/1/1865/9309/products/White-Gold-Buck-Doe-Set-Alfred-Ophelia-His-and-Hers_jpg_360x.jpg?v=1555527528'> circumstances and owing to the claims of duty or the obligations of business it will frequently occur that<img src='https://cdn.shopify.com/s/files/1/1865/9309/products/deer-skull-mini-white-gold-antlers-1_360x.jpg?v=1507816916'> pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. "
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang1"><ion-icon name="bag-add-outline"></ion-icon></button>
+
+                        <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                        <p>Accusantium Doloremque <br> <b>$ 104.00</b></p>
+                        <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+
+                    </div>
+                </div>
+
+                <div class="anh11 hopsp30" id="anh33"><img id="anh333" src="anh/category-image3.jpg" alt="">
+                    <div id="brank3" data-brank="Home Decor Art"></div>
+                    <div class="hopchuadanhmuc2">
+                        <button id="love2" data-price="104"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh3/goc1.jpg" data-goc2="anh3/goc2.jpg"
+                            data-goc3="anh3/goc3.jpg" data-goc4="anh3/goc4.jpg"
+                            data-chitiet="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas<img src='https://guongbi.com/wp-content/uploads/2017/07/d9.png'> molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.<img src='https://bizweb.dktcdn.net/100/098/272/files/tuong-dau-phat-dep-5.jpg?v=1501484436428'> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint  et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by <img src='https://bizweb.dktcdn.net/100/098/272/files/tuong-dau-phat-dep-1.jpg?v=1501484456994'>the charms of pleasure of the moment, <img src='https://bizweb.dktcdn.net/100/098/272/files/dau-tuong-phat-1-c63e0489-cb45-4aa7-a387-17eff2fcd8de.jpg?v=1501484720497'>so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.<img src='https://bizweb.dktcdn.net/100/098/272/files/tuong-dau-phat-dep-4.jpg?v=1501484472248'> The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains. Tượng decor phật tổ
+    
+                                Tượng Phật Tổ Decor ngoài những tác dụng sâu xa của Phật Giáo còn cho chúng ta rất nhiều điều về mặt tâm lý chiều sâu, rất tinh tế về mặt khoa học tâm linh và cũng là công cụ hỗ trợ đặc biệt về khoa học phong thủy Decor nội thất hiện đại, tạo ra một không gian thiền định, tĩnh tâm sâu lắng, hướng thiện và cầu bình an.	"
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang2"><ion-icon name="bag-add-outline"></ion-icon></button>
+
+                        <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon><ion-icon
+                                name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                        <p>Accusantium Doloremque <br> <b>$ 104.00</b></p>
+                        <i>Commodi ConsequaturCommodi ConsequaturSale2% Off </i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hopsanpham1112">
+                <div class="hopsp30" id="hopsp30-12"><img
+                        src="anh01/ong-huong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11110">
+                        <button id="love12" data-price="119"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh13/goc1.jpg" data-goc2="anh13/goc2.jpg"
+                            data-goc3="anh13/goc3.jpg" data-goc4="anh13/goc4.jpg" data-chitiet="Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 thường được dùng để đựng hương hoặc đũa và đặt ngoài cùng của bàn thờ. Sản phẩm với kiểu dáng hình trụ tròn, được vẽ họa tiết sen vô cùng bắt mắt và thu hút.
+    
+                                
+                                Ống hương Bát Tràng với họa tiết sen đẹp
+                                Sau đây, hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về đặc điểm của mẫu sản phẩm này nhé. <br>
+                                
+                                <b>Đặc điểm sản phẩm</b>
+                                Ống hương thờ được làm từ chất liệu men lam cao cấp Bát Tràng, xử lý và nung trong nhiệt độ cao lên tới 1300 độ C, tạo độ bền cao, độ cứng tốt.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/ong-huong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-2.jpg'>
+                                Mặt sau của ống hương
+                                Do được làm thủ công hoàn toàn nên sản phẩm có độ dày lớn, chống sứt mẻ, đổ vỡ, không bị phai màu, cũ đi trong quá trình sử dụng nên là lựa chọn tuyệt vời khi chọn mua đồ thờ cúng.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/ong-huong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-3.jpg'>
+                                Ống hương Bát Tràng men lam cao cấp
+                                Ống cắm hương thường có cấu tạo gồm 3 phần: Đế, thân và miệng. Phần thân có hình dáng trụ với họa tiết hoa sen cực đẹp. Phần miệng khá rộng, đủ đựng hương (nhang).
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/ong-huong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-4.jpg'>
+                                Ống đựng nhang nhẵn mịn
+                                Trong văn hóa của người Việt, ống đựng nhang là vật phẩm quan trọng trong quan niệm từ thời xa xưa. Từ đó, khi bày trí trên bàn thờ giúp bàn thờ được đầy đủ các vật dụng, tạo nên sự hài hòa trong âm dương.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/ong-huong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-5.jpg'>
+                                Chân trụ vững chắc
+                                Ống hương gốm sứ Bát Tràng được nhiều khách hàng yêu thích bởi nó không chỉ được đánh giá cao về thẩm mỹ mà còn mang giá trị phong thủy rất lớn.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/ong-huong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-6.jpg'>
+                                Ống hương được in logo nhà sản xuất
+                                
+                                <img src='anh13/thongso.png'>" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang12"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Ống hương <br> <b>119.00 đ</b>
+                    </p> <i>Ống hương men lam Bát Tràng họa tiết hoa sen vẽ tay BT-OH03 </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-13"><img
+                        src="anh01/nam-ruou-ho-lo-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11111">
+                        <button id="love13" data-price="66"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh14/goc1.jpg" data-goc2="anh14/goc2.jpg"
+                            data-goc3="anh14/goc3.jpg" data-goc4="anh14/goc4.jpg" data-chitiet="Nậm rượu hồ lô men lam Bát Tràng họa tiết hoa sen vẽ tay BT-NRT05 là sản phẩm được sản xuất trực tiếp ở Bát Tràng, với kiểu dáng truyền thống, quen thuộc, dễ sử dụng, họa tiết hoa sen nổi bật, được sử dụng phổ biến trên bàn thờ của mỗi gia đình Việt.
+    
+                              <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/nam-ruou-ho-lo-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1.jpg'>
+                                Bình nậm rượu dáng hồ lô
+                                Đặc điểm sản phẩm
+                                Nậm rượu thờ cúng Bát Tràng là một sản phẩm thủ công được làm bằng đất sét và có hình dáng giống như một quả hồ lô. Nó được trang trí với họa tiết vẽ sen tượng trưng cho sự thanh tịnh và tinh khiết. <br> 
+                                
+                                <b>Đặc điểm sản phẩm</b>
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/nam-ruou-ho-lo-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-2.jpg'>
+                                Nậm rượu với họa tiết hoa sen cực đẹp
+                                Dáng hồ lô của nậm rượu cũng mang nhiều ý nghĩa phong thủy, giúp tăng tài lộc như miệng nhỏ để hút lộc, bụng phình to để chứa lộc. Bài trí nậm rượu trên bàn thờ giúp đem đến tài lộc, may mắn và hạnh phúc cho gia đình.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/nam-ruou-ho-lo-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-3.jpg'>
+                                Bình nậm rượu cao cấp Bát Tràng
+                                Công dụng chính của nậm rượu là dùng để đựng rượu sạch.Trong những lễ đặc biệt, rượu thường được để trong nậm rượu và được dâng lên để cúng thần linh, tổ tiên, các vị thần, đem lại sự bình an cho gia chủ.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/nam-ruou-ho-lo-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-4.jpg'>
+                                Nậm rượu hồ lô dáng đẹp
+                                Nậm rượu Bát Tràng được các nghệ nhân chế tác vô cùng tinh xảo, kiểm tra chất lượng khắt khe trong từng khâu sản xuất. Nguyên liệu sử dụng từ các loại đất tự nhiên chọn lọc tốt nhất, tráng men và nung lò ở nhiệt độ 1300 độ C.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/nam-ruou-ho-lo-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-5.jpg'>
+                                Nậm rượu có nắp đậy
+                                Do đó, sản phẩm có độ bền và tuổi thọ cao, bề mặt bóng nhẵn giúp dễ lau chùi khi bám bẩn. Đồng thời an toàn sức khỏe cho người dùng.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/nam-ruou-ho-lo-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-6.jpg'>
+                                Sản phẩm được in logo nhà sản xuất
+                                Mỗi gia đình nên sắm một bình nậm rượu để trên bàn thờ, điều này sẽ giúp gia đình bạn duy trì các nghi lễ thờ cúng một cách trang trọng và nghiêm túc.
+                                <img src='anh14/thongso.png'>" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang13"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Nậm Rượu <br> <b>66.000 đ</b>
+                    </p> <i>Nậm rượu hồ lô men lam Bát Tràng họa tiết hoa sen vẽ tay BT-NRT05 </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-14"><img
+                        src="anh01/mam-bong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11112">
+                        <button id="love14" data-price="172"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh15/goc1.jpg" data-goc2="anh15/goc2.jpg"
+                            data-goc3="anh15/goc3.jpg" data-goc4="anh15/goc4.jpg" data-chitiet="Mâm bồng men lam Bát Tràng họa tiết hoa sen vẽ tay BT-MB05 là vật phẩm thờ cúng được đặt trên bàn thờ, sử dụng với mục đích đựng hoa quả tươi, trầu cau và tiền mã để dâng lên ông bà tổ tiên.
+    
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/mam-bong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1.jpg'>
+                                Mâm bồng vẽ sen
+                                Mỗi gia đình nên có đầy đủ với 3 mâm bồng: 1 mâm để đựng hoa quả tươi, 1 mâm để đựng trầu cau, mâm còn lại dùng để đựng tiền vàng mã. Điều này, giúp cho không gian thờ trở nên đủ đầy và trang nghiêm hơn. <br>
+                                
+                                <b>Đặc điểm sản phẩm</b>
+                                Mâm bồng gốm sứ Bát Tràng được làm từ chất liệu men lam nổi tiếng kết hợp với họa tiết hoa sen vẽ tay vô cùng tinh xảo bởi các nghệ nhân làng gốm Bát Tràng.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/mam-bong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-2.jpg'>
+                                Mâm bồng Bát Tràng đẹp, giá tốt
+                                Đặc biệt, sản phẩm trải qua quá trình nung ở nhiệt độ rất cao hơn 1300 độ C để có được một thành phẩm đạt chất lượng, nên bền cao, chắc chắn, khó bị sứt mẻ, trầy xước khi sử dụng trong thời gian dài.
+                                
+                                Đây là các yếu tố hàng đầu vì đồ thờ cúng kiêng kỵ nhất là việc đổ vỡ, di chuyển.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/mam-bong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-3.jpg'>
+                                Chân mâm bồng vững chắc
+                                Mâm bồng với họa tiết hoa sen mang nhiều ý nghĩa về tâm linh cũng như phong thủy. Hoa sen không chỉ mang tới sự sang trọng, tinh tế mà còn là biểu tượng của nhà Phật, mang tới sự trong sạch, hòa khí, thu hút tài lộc, phúc đức cho gia chủ.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/mam-bong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-4.jpg'>
+                                Hoa sen được vẽ tỉ mỉ, cẩn thận
+                                Sản phẩm có nhiều kích thước khác nhau, giúp khách hàng dễ dàng lựa chọn mẫu phù hợp cho không gian thờ của gia đình. Mâm bồng còn có kiểu dáng sang trọng, dễ cầm nắm, thuận lợi cho việc di chuyển.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/mam-bong-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-5.jpg'>
+                                Được in logo nhà sản xuất
+                                Lưu ý rằng, khi đặt mâm bồng trên bàn thờ không nên để sát với bát hương. Để quá gần nhau có thể khiến tàn hương rơi vào hoa quả, làm hỏng và đem lại vận xui. 
+                                <img src='anh15/thongso.png'>" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang14"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Mâm bồng men lam <br> <b>172.000 đ</b>
+                    </p> <i>Mâm bồng men lam Bát Tràng họa tiết hoa sen vẽ tay BT-MB05 </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-15"><img
+                        src="anh01/lo-hoa-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11113">
+                        <button id="love15" data-price="72"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh16/goc1.jpg" data-goc2="anh16/goc2.jpg"
+                            data-goc3="anh16/goc3.jpg" data-goc4="anh16/goc4.jpg" data-chitiet="
+                                Lọ hoa men lam Bát Tràng họa tiết hoa sen vẽ tay BT-LH08 là sản phẩm được thiết kế có dáng giống như hoa huệ, mang nét đẹp cổ điển và hiện đại, phù hợp với mọi không gian thờ tự.
+    
+    <img src ='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1.jpg'>
+    Lọ hoa dáng huệ men lam <br>
+    <b>Đặc điểm sản phẩm</b>
+    Lọ hoa thờ cao cấp Bát Tràng không chỉ là một sản phẩm trang trí bằng sứ mà còn là một tác phẩm nghệ thuật độc đáo, phù hợp với nhiều không gian trang trí khác nhau.
+    
+    <img src ='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-2.jpg'>
+    Mặt sau của lọ hoa
+    Trên bàn thờ của mỗi gia đình Việt sẽ không thể thiếu hình ảnh bình hoa, nó thường được đặt ở hai bên góc trái, phải của bàn thờ, dùng để cắm các loại hoa như hoa cúc, hoa ly,… mỗi ngày.
+    
+    <img src ='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-3.jpg'>
+    Họa tiết sen vẽ tay
+    Việc đặt bình hoa trên bàn thờ có nhiều ý nghĩa về tâm linh và phong thủy, giúp gia chủ hội tụ và lưu giữ những sinh khí tốt đẹp của đất trời, mang nhiều tài lộc, may mắn, đem lại sự mát mẻ, thanh tịnh cho không gian thờ.
+    
+    <img src ='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-4.jpg'>
+    Cổ bình mềm mại, thu hút
+    Sản phẩm lọ hoa là dòng đồ thờ cúng men xanh, được làm từ chất liệu men lam cao cấp và nung ở nhiệt độ cao. Vì thế, bình hoa thờ luôn có độ cứng cáp, bền chắc, bề mặt láng mịn, khó sứt mẻ, an toàn cho người sử dụng.
+    
+    <img src ='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-5.jpg'>
+    Lọ hoa thờ được in logo nhà sản xuất
+    Ngoài ra, lọ hoa còn được các nghệ nhân trau chuốt vẽ sen vô cùng tỉ mỉ, cẩn thận. Hoa sen trong phong thủy tượng trưng cho sự thuần khiết, tinh khôi. Vì thế nên được nhiều khách hàng chọn để bày trí cho không gian thờ tự.
+    <img src ='anh16/thongso.png'>" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang15"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lọ hoa men lam <br> <b>72.000 đ</b>
+                    </p> <i>Lọ hoa men lam Bát Tràng họa tiết hoa sen vẽ tay BT-LH08 </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-16"><img
+                        src="anh01/lo-hoa-dang-bao-binh-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11114">
+                        <button id="love16" data-price="102"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh17/goc1.jpg" data-goc2="anh17/goc2.jpg"
+                            data-goc3="anh17/goc3.jpg" data-goc4="anh17/goc4.jpg" data-chitiet="Lọ hoa dáng bảo bình men lam Bát Tràng họa tiết hoa sen BT-LH07 là một trong những món đồ không thể thiếu trên bàn thờ, thường được dùng để cắm hoa dâng lên ông bà, tổ tiên vào những dịp lễ đặc biệt, thể hiện lòng thành kính của con cháu.
+    
+                               <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-dang-bao-binh-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1.jpg'>
+                                Lọ hoa thờ men lam dáng bảo bình <br>
+                              <b>  Đặc điểm sản phẩm</b>
+                                Lọ hoa là dòng đồ thờ cúng men xanh được làm từ chất liệu gốm sứ cao cấp, sản phẩm không chỉ đẹp mắt mà còn thể hiện sự tinh tế trong từng đường nét.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-dang-bao-binh-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-2.jpg'>
+                                Mặt sau của bình hoa thờ
+                                Đặc biệt, lọ hoa Bát Tràng mang đậm vẻ đẹp truyền thống của văn hóa Việt Nam, thu hút sự chú ý của nhiều người yêu thích gốm sứ.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-dang-bao-binh-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-3.jpg'>
+                                Cổ lọ mềm mại, ấn tượng
+                                Lọ hoa dáng bảo bình được thiết kế với hình dáng độc đáo, gợi nhớ đến hình tượng của chiếc bình cổ xưa. Thân bình to, miệng bình và đáy bình nhỏ hơn tạo nên sự cân đối, hài hòa trong thiết kế.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-dang-bao-binh-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-4.jpg'>
+                                Hoa sen nổi bật trên bề mặt bình hoa
+                                Men lam là một loại men truyền thống của làng gốm Bát Tràng, mang đến vẻ đẹp quý phái, sang trọng cho sản phẩm.
+                                
+                                Sử dụng men lam, lọ hoa thờ tạo nên một sắc màu đậm chất cổ điển, quý phái. Màu lam nhạt xen kẽ với màu lam đậm, tạo nên những đường nét mềm mại, uốn lượn trên bề mặt sản phẩm, mang đến sự sống động cho họa tiết hoa sen.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/lo-hoa-dang-bao-binh-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-5.jpg'>
+                                Lọ hoa dáng đẹp, đem đến nhiều tài lộc
+                                Các nghệ nhân Bát Tràng đã sử dụng kỹ thuật vẽ tay để tạo nên những bông hoa sen tuyệt đẹp, nổi bật trên nền men lam. Cánh hoa sen mềm mại, uốn lượn tựa như đang nhảy múa trong gió, tạo nên một bức tranh sống động, đầy nghệ thuật.
+                                
+                                Đây không chỉ là món đồ thờ đẹp mà nó còn mang lại nhiều ý nghĩa về tâm linh và phong thủy cực kỳ sâu sắc.
+                                <img src='anh17/thongso.png'>" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang16"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lọ hoa dáng bảo bình men lam <br> <b>102.000 đ</b>
+                    </p> <i>Lọ hoa dáng bảo bình men lam Bát Tràng họa tiết hoa sen BT-LH07 </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-17"><img
+                        src="anh01/den-tho-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11115">
+                        <button id="love17" data-price="70"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh18/goc1.jpg" data-goc2="anh18/goc2.jpg"
+                            data-goc3="anh18/goc3.jpg" data-goc4="anh18/goc4.jpg" data-chitiet="Đèn thờ men lam Bát Tràng họa tiết lưỡng long chầu nguyệt BT-ĐT15 là vật dụng quen thuộc, gắn liền với đời sống sinh hoạt và thể hiện được những giá trị văn hóa độc đáo của dân tộc Việt Nam.
+    
+                               <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-1.jpg'>
+                                Đèn dầu đẹp, chất lượng cao
+                                Đèn dầu thờ giúp cho không gian thờ trở nên đủ đầy, tăng tính sang trọng. Hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về sản phẩm này qua bài viết sau đây nhé.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-2.jpg'>
+                                Mặt sau của đèn dầu thờ <br>
+                                <b>Đặc điểm sản phẩm</b>
+                                Đèn dầu thờ Bát Tràng còn được gọi là đèn hoa kỳ, đây là loại đèn tạo ra ánh sáng bằng ngọn lửa được đốt bằng dầu hỏa, giúp thắp sáng cho cả không gian thờ, mang lại cảm giác ấm cúm, hạnh phúc.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-3.jpg'>
+                                Họa tiết lưỡng long chầu nguyệt tinh xảo, rõ nét
+                                Sản phẩm với kiểu dáng chân váy. Kiểu dáng này thường mang ý nghĩa của sự thanh tịnh và sự sáng suốt trong tâm hồn của con người. Tựa như chiếc chân váy, đèn dầu thờ này cũng thể hiện sự tôn trọng và vinh danh cho phái đẹp.
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-4.jpg'>
+                                Đèn dầu thờ men lam
+                                Trên bàn thờ, đen dầu luôn được đặt ở vị trí ưu tiên, là cầu nối giữa thế giới người sống và thế giới người chết. Điều này thường được thể hiện trong nghi thức dâng hương của người Việt.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-5.jpg'>
+                                Dáng chân váy sang trọng
+                                Đèn thờ cao cấp được làm từ chất liệu men lam lâu đời và chỉ Bát Tràng mới có. Đây là loại men tạo bóng cho sản phẩm, chất men dày dặn, mang đến vẻ đẹp sang trọng cho đèn dầu.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-6.jpg'>
+                                Đèn dầu có tính thẩm mỹ cao
+                                Điểm ấn tượng tạo sự thu hút cho sản phẩm đó là họa tiết lưỡng long chầu nguyệt được vẽ tay cực kỳ tinh xảo, rõ nét với từng chi tiết một. Lưỡng long chầu nguyệt là biểu tượng của những điều tốt đẹp, may mắn cho gia chủ.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-7.jpg'>
+                                Đây là một trong những mẫu đồ thờ cúng men xanh đang được đông đảo khách hàng tìm kiếm và mua nhiều nhất trong những tháng gần đây. Vì thế, quý khách hãy nhanh tay đặt cho mình sản phẩm đẹp này nhé.
+                                <img src='anh18/thongso.png'>" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang17"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Đèn thờ men lam <br> <b>70.000 đ</b>
+                    </p> <i>Đèn thờ men lam Bát Tràng họa tiết lưỡng long chầu nguyệt BT-ĐT15 </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-18"><img
+                        src="anh01/den-tho-men-lam-bat-trang-hoa-tiet-hoa-sen-ve-tay-1-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11116">
+                        <button id="love18" data-price="79"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh18/goc1.jpg" data-goc2="anh18/goc2.jpg"
+                            data-goc3="anh18/goc3.jpg" data-goc4="anh18/goc4.jpg" data-chitiet="Đèn thờ men lam Bát Tràng họa tiết lưỡng long chầu nguyệt BT-ĐT15 là vật dụng quen thuộc, gắn liền với đời sống sinh hoạt và thể hiện được những giá trị văn hóa độc đáo của dân tộc Việt Nam.
+    
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-1.jpg'>
+                                 Đèn dầu đẹp, chất lượng cao
+                                 Đèn dầu thờ giúp cho không gian thờ trở nên đủ đầy, tăng tính sang trọng. Hãy cùng Không gian gốm Bát Tràng Đà Nẵng tìm hiểu về sản phẩm này qua bài viết sau đây nhé.
+                                 
+                                 <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-2.jpg'>
+                                 Mặt sau của đèn dầu thờ <br>
+                                 <b>Đặc điểm sản phẩm</b>
+                                 Đèn dầu thờ Bát Tràng còn được gọi là đèn hoa kỳ, đây là loại đèn tạo ra ánh sáng bằng ngọn lửa được đốt bằng dầu hỏa, giúp thắp sáng cho cả không gian thờ, mang lại cảm giác ấm cúm, hạnh phúc.
+                                 
+                                 <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-3.jpg'>
+                                 Họa tiết lưỡng long chầu nguyệt tinh xảo, rõ nét
+                                 Sản phẩm với kiểu dáng chân váy. Kiểu dáng này thường mang ý nghĩa của sự thanh tịnh và sự sáng suốt trong tâm hồn của con người. Tựa như chiếc chân váy, đèn dầu thờ này cũng thể hiện sự tôn trọng và vinh danh cho phái đẹp.
+                                 <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-4.jpg'>
+                                 Đèn dầu thờ men lam
+                                 Trên bàn thờ, đen dầu luôn được đặt ở vị trí ưu tiên, là cầu nối giữa thế giới người sống và thế giới người chết. Điều này thường được thể hiện trong nghi thức dâng hương của người Việt.
+                                 
+                                 <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-5.jpg'>
+                                 Dáng chân váy sang trọng
+                                 Đèn thờ cao cấp được làm từ chất liệu men lam lâu đời và chỉ Bát Tràng mới có. Đây là loại men tạo bóng cho sản phẩm, chất men dày dặn, mang đến vẻ đẹp sang trọng cho đèn dầu.
+                                 
+                                 <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-6.jpg'>
+                                 Đèn dầu có tính thẩm mỹ cao
+                                 Điểm ấn tượng tạo sự thu hút cho sản phẩm đó là họa tiết lưỡng long chầu nguyệt được vẽ tay cực kỳ tinh xảo, rõ nét với từng chi tiết một. Lưỡng long chầu nguyệt là biểu tượng của những điều tốt đẹp, may mắn cho gia chủ.
+                                 
+                                 <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/den-tho-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-7.jpg'>
+                                 Đây là một trong những mẫu đồ thờ cúng men xanh đang được đông đảo khách hàng tìm kiếm và mua nhiều nhất trong những tháng gần đây. Vì thế, quý khách hãy nhanh tay đặt cho mình sản phẩm đẹp này nhé.
+                                 <img src='anh18/thongso.png'>" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang18"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Đèn dầu men lam <br> <b>79.000 đ</b>
+                    </p> <i>Đèn dầu men lam Bát Tràng họa tiết hoa sen vẽ tay BT-ĐT14 </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-19"><img
+                        src="anh01/de-bat-huong-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-1-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11117">
+                        <button id="love19" data-price="0"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh19/goc1.jpg" data-goc2="anh19/goc2.jpg"
+                            data-goc3="anh19/goc3.jpg" data-goc4="anh19/goc4.jpg" data-chitiet="Đế bát hương men lam Bát Tràng vẽ lưỡng long chầu nguyệt BT-ĐBH02 là sản phẩm đang được nhiều khách hàng ưa chuộng, bởi nó giữ cố định cho bát hương và không bị động khi thờ cúng.
+    
+                               <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/de-bat-huong-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-1.jpg'>
+                                Đế bát hương chuẩn Bát Tràng <br>
+                               <b> Đặc điểm sản phẩm</b>
+                                Bát hương là món đồ quan trọng không thể thiếu trên bàn thờ cúng. Chính vì vậy, cần phải gìn giữ bát hương sao cho vật này luôn được sạch sẽ và tránh bị rơi vỡ. Do đó, việc có phần chân đế kê bát hương là điều cần phải có.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/de-bat-huong-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-2.jpg'>
+                                Mặt sau chân đế
+                                Chân đế bát hương được làm từ chất liệu gốm sứ Bát Tràng, được phủ một lớp bóng mịn, mang đến cảm giác sang trọng cho không gian thờ.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/de-bat-huong-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-4.jpg'>
+                                Họa tiết lưỡng long chầu nguyệt cực đẹp
+                                Đặc biệt, sản phẩm được vẽ họa tiết lưỡng long chầu nguyệt vô cùng thu hút, ấn tượng. Lưỡng long chầu nguyệt trong phong thủy có nghĩa đem lại may mắn, tài lộc, phú quý cho gia chủ.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/de-bat-huong-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-3.jpg'>
+                                Bề mặt chân đế láng mịn, tránh được bụi bặm
+                                Để bàn thờ được đồng bộ và tăng tính thẩm mỹ cao hơn thì quý khách nên lựa chọn mẫu bát hương men lam có họa tiết lưỡng long chầu nguyệt.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/de-bat-huong-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-5.jpg'>
+                                Sản phẩm không cầu kì nhưng rất sang trọng
+                                Sản phẩm được nung ở nhiệt độ cao và được điều chỉnh liên tục, cẩn thận. Do đó, chân đế đạt được chất lượng cao, cứng cáp hơn, không sứt mẻ cũng như trầy xước khi va chạm, bền màu vĩnh viễn theo thời gian.
+                                
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2023/04/de-bat-huong-men-lam-bat-trang-hoa-tiet-luong-long-chau-nguyet-6.jpg'>
+                                Sản phẩm chính hãng Bát Tràng, có logo nhà sản xuất
+                                Mỗi gia đình nên có cho mình một bộ bát hương kèm chân đế, để tăng tính sang trong cho không gian thờ và thể hiện lòng thành kính với ông bà, tổ tiên.
+                                <img src='anh19/thongso.png '>" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang19"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Đế bát hương men lam <br> <b>Tạm hết</b>
+                    </p> <i>Đế bát hương men lam Bát Tràng vẽ lưỡng long chầu nguyệt BT-ĐBH02 </i>
+                </div>
+
+
+
+            </div>
+
+            <div class="hopsanpham1112">
+                <div class="hopsp30" id="hopsp30-20"><img src="anh01/binh-hoa-su-bat-trang-73-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11118">
+                        <button id="love20" data-price="1300"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh20/goc1.jpg" data-goc2="anh20/goc2.jpg"
+                            data-goc3="anh20/goc3.jpg" data-goc4="anh20/goc4.jpg"
+                            data-chitiet="Vò hút lộc S3 vẽ kỹ sứ Bát Tràng
+                                Vò hút lộc S3 vẽ kỹ sứ Bát Tràng
+                                Vò hút lộc S3 vẽ kỹ sứ Bát Tràng
+                                Hoa sen vẽ vàng nổi bật trên nền sứ đỏ
+                                Vò hút lộc S3 vẽ kỹ sứ Bát Tràng
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-71.jpg'> <br>
+                                Chất liệu: Sứ Bát Tràng
+                                Thu hút tài lộc, may mắn, giữ của cải cho gia chủ - khong co mo ta chi tiet <br>Đặt hàng nhanh chóng , gọi lại xác nhận ngay! "
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang20"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Vò hút lộc S3 <br> <b>1.300.000 đ</b>
+                    </p> <i>Vò hút lộc S3 vẽ kỹ sứ Bát Tràngchầu nguyệt BT-ĐBH02 </i>
+                </div>
+
+
+
+
+                <div class="hopsp30" id="hopsp30-21"><img src="anh01/binh-hoa-su-bat-trang-63-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11119">
+                        <button id="love21" data-price="700"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh21/goc1.jpg" data-goc2="anh21/goc2.jpg"
+                            data-goc3="anh21/goc3.jpg" data-goc4="anh21/goc4.jpg" data-chitiet="Chất liệu: Sứ Bát Tràng 
+                            <img src ='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-64.jpg'>
+    Vò xoài cắm hoa sứ vẽ tay 3D
+    <img src ='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-58.jpg'>
+    Vò xoài cắm hoa sứ vẽ tay 3D
+    <img src ='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-55.jpg'>
+    Vò xoài cắm hoa sứ vẽ tay 3D
+    <img src ='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-63.jpg'>  <img src ='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-61.jpg'>
+    Kiểu dáng phong phú để lựa chọn
+    
+    Vò xoài cắm hoa sứ vẽ tay 3D
+    Vò vẽ hoa hướng dương 3D
+    Vò xoài cắm hoa sứ vẽ tay 3D
+    Vò vẽ hoa lan trắng 3D" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang21"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Vò xoài cắm hoa <br> <b>700.000 đ</b>
+                    </p> <i>Vò xoài cắm hoa sứ vẽ tay 3D </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-22"><img src="anh01/binh-hoa-su-bat-trang-62-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11120">
+                        <button id="love22" data-price="0"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh22/goc1.jpg" data-goc2="anh22/goc2.jpg"
+                            data-goc3="anh22/goc3.jpg" data-goc4="anh22/goc4.jpg" data-chitiet="Bình hoa dáng bom S2 vẽ 3D - Chất liệu: Sứ Bát Tràng <br>
+                                Bình cắm hoa vẽ sen 3D
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-62.jpg'>
+                                Bình hoa dáng bom S2 vẽ 3D
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-51.jpg'>
+                                Bình hoa dáng bom S2 vẽ 3D
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-51.jpg'> <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-50.jpg'>
+                                Đa dạng mẫu mã để lựa chọn tại Không gian Gốm Bát Tràng Đà Nẵng
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-66.jpg'>
+                                Bình hoa dáng bom S2 vẽ 3D
+                                Bình hoa dáng bom S2 vẽ 3D hoa tulip
+                                Bình hoa dáng bom S2 vẽ 3D
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-67.jpg'>
+                                Bình hoa dáng bom S2 vẽ 3D
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-67.jpg'>
+                                Kiểu dáng truyền thống dễ cắm và tạo kiểu cho mọi loại hoa"
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang22"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bình hoa dáng bom S2 <br> <b>Tạm hết</b>
+                    </p> <i>Bình hoa dáng bom S2 vẽ 3D </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-23"><img src="anh01/binh-hoa-su-bat-trang-54-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11121">
+                        <button id="love23" data-price="455"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh23/goc1.jpg" data-goc2="anh23/goc2.jpg"
+                            data-goc3="anh23/goc3.jpg" data-goc4="anh23/goc4.jpg" data-chitiet="Vò cao S1 cắm hoa vẽ tay 3D - Chất liệu: Sứ Bát Tràng <br>
+                                Vò cao S1 vẽ hoa râm bụt
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-54.jpg'>
+                                Vò cao S1 cắm hoa vẽ tay 3D
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-56.jpg'>
+                                Vò cao S1 vẽ hoa lan
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-56.jpg'>
+                                Vò cao S1 cắm hoa vẽ tay 3D
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-56.jpg'>
+                                Vò cao S1 cắm hoa vẽ tay 3D" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang23"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Vò cao S1 <br> <b>455.000 đ</b>
+                    </p> <i>Vò cao S1 cắm hoa vẽ tay 3D </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-24"><img src="anh01/binh-hoa-su-bat-trang-60-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11122">
+                        <button id="love24" data-price="800"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh24/goc1.jpg" data-goc2="anh24/goc2.jpg"
+                            data-goc3="anh24/goc3.jpg" data-goc4="anh24/goc4.jpg" data-chitiet="Vò cao S1 cắm hoa vẽ tay 3D - Chất liệu: Sứ Bát Tràng <br>
+                                Vò cao S1 vẽ hoa râm bụt
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-60.jpg'>
+                                Vò cao S1 cắm hoa vẽ tay 3D
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-56.jpg'>
+                                Vò cao S1 vẽ hoa lan
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-56.jpg'>
+                                Vò cao S1 cắm hoa vẽ tay 3D
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/ban-ner-cau-rong-da-nang.jpg'>
+                                Vò cao S1 cắm hoa vẽ tay 3D" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang24"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Vò hút lộc S3 <br> <b>800.000 đ</b>
+                    </p> <i>Vò hút lộc S3 vẽ 3D sứ đẹp mắt </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-25"><img src="anh01/binh-hoa-su-bat-trang-78-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11123">
+                        <button id="love25" data-price="550"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh25/goc1.jpg" data-goc2="anh25/goc2.jpg"
+                            data-goc3="anh25/goc3.jpg" data-goc4="anh25/goc4.jpg" data-chitiet="Tỏi cổ nhỏ S1 sứ Bát Tràng đẹp
+                                Tỏi cổ nhỏ S1 sứ Bát Tràng nền đỏ -  Chất liệu: Sứ Bát Tràng <br>
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-78.jpg'>
+                                Tỏi cổ nhỏ S1 sứ Bát Tràng đẹp
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-78.jpg'>
+                                Kiểu dáng thanh tao, trang nhã, hoa sen vẽ tay mềm mại trong từng đường nét"
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang25"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Tỏi cổ nhỏ S1 <br> <b>550.000 đ</b>
+                    </p> <i>Tỏi cổ nhỏ S1 sứ Bát Tràng nền đỏ </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-26"><img src="anh01/binh-hoa-su-bat-trang-74-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11124">
+                        <button id="love26" data-price="550"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh26/goc1.jpg" data-goc2="anh26/goc2.jpg"
+                            data-goc3="anh26/goc3.jpg" data-goc4="anh26/goc4.jpg" data-chitiet="Tỏi cổ nhỏ S1 sứ Bát Tràng
+                                Tỏi cổ nhỏ S1 sứ Bát Tràng
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-76.jpg'> 
+                                Tỏi cổ nhỏ S1 sứ Bát Tràng
+                                <img src='http://www.gomtinhhoa.vn/images/products/sanpham-toi-det-so-1-mau-trang.jpg'> 
+                                Nhà sản xuấtGốm sứ Bát Tràng <br> Giá bán550,000 đ Tình trạng sản phẩm : Có sẵn
+                                Họa tiết sen và lá vẽ tay sinh động" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang26"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Tỏi cổ nhỏ S1 <br> <b>550.000 đ</b>
+                    </p> <i>Tỏi cổ nhỏ S1 sứ Bát Tràng</i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-27"><img src="anh01/binh-hoa-su-bat-trang-81-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11125">
+                        <button id="love27" data-price="945"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh27/goc1.jpg" data-goc2="anh27/goc2.jpg"
+                            data-goc3="anh27/goc3.jpg" data-goc4="anh27/goc4.jpg" data-chitiet="Vò xoài sứ có miệng vẽ 3D nền xanh
+                                Vò xoài sứ có miệng vẽ 3D nền xanh
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-81.jpg'>
+                                Vò xoài sứ có miệng vẽ 3D nền xanh
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/12/binh-hoa-su-bat-trang-85.jpg'>
+                                Vò xoài sứ có miệng vẽ 3D
+    Vò xoài sứ có miệng vẽ 3D
+    Phong cảnh làng quê được khắc họa sinh động, đẹp mắt
+    Vò xoài sứ có miệng vẽ 3D
+    Có thể dùng để làm bình cắm hoa hoặc trưng bày
+                                Lớp xương gốm dày, chắc, đều, bề mặt sứ căng mịn, bóng láng"
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang27"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Vò xoài sứ có miệng <br> <b>945.000 đ</b>
+                    </p> <i>Vò xoài sứ có miệng vẽ 3D nền xanh</i>
+                </div>
+
+            </div>
+
+
+
+            <div class="hopsanpham1112">
+
+                <div class="hopsp30" id="hopsp30-28"><img src="anh01/bat-dia-25-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11126">
+                        <button id="love28" data-price="1100"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh28/goc1.jpg" data-goc2="anh28/goc2.jpg"
+                            data-goc3="anh28/goc3.jpg" data-goc4="anh28/goc4.jpg" data-chitiet="Bộ bàn ăn Minh Châu
+                                Bộ bàn ăn Minh Châu đẹp in logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-25.jpg'>
+                                Bộ bàn ăn Minh Châu
+                                Bộ bàn ăn Minh Châu đẹp in logo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-37.jpg'>
+                                 
+                                
+                                Bộ bàn ăn Minh Châu
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-45.jpg'>
+                                Bộ bàn ăn Minh Châu đẹp in logo" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang28"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ bàn ăn in logo <br> <b>1.100.000 đ</b>
+                    </p> <i>Bộ bàn ăn Minh Châu KGG08 in logo</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-29"><img src="anh01/bat-dia-24-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11127">
+                        <button id="love29" data-price="1090"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh29/goc1.jpg" data-goc2="anh29/goc2.jpg"
+                            data-goc3="anh29/goc3.jpg" data-goc4="anh29/goc4.jpg" data-chitiet="Bộ chén đĩa Minh Châu
+                                Bộ chén đĩa Minh Châu đẹp in logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-25.jpg'>
+                                Bộ bàn ăn Minh Châu
+                                Bộ bàn ăn Minh Châu đẹp in logo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-37.jpg'>
+                                 
+                                
+                                Bộ bàn ăn Minh Châu
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-45.jpg'>
+                                
+                                Bộ chén đĩa Minh Châu
+                                Bộ chén đĩa Minh Châu đẹp in logo" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang29"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ chén đĩa Minh Châu <br> <b>1.090.000 đ</b>
+                    </p> <i>Bộ chén đĩa Minh Châu đẹp in logo KGG07</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-30"><img src="anh01/bat-dia-21-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11128">
+                        <button id="love30" data-price="1090"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh30/goc1.jpg" data-goc2="anh30/goc2.jpg"
+                            data-goc3="anh30/goc3.jpg" data-goc4="anh30/goc4.jpg" data-chitiet="Bộ bàn ăn Bát Tràng cao cấp
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ tay in Logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-21.jpg'> 
+                                Bộ bàn ăn Bát Tràng cao cấp
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-14.jpg'> 
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ tay in Logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-10.jpg'> 
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ tay in Logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-14.jpg   '> <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-29.jpg'> 
+                                Bộ bàn ăn Bát Tràng cao cấp
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ tay in Logo" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang30"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ bàn ăn Bát Tràng <br> <b>1.090.000 đ</b>
+                    </p> <i>Bộ bàn ăn Bát Tràng vẽ tay in Logo KGG06</i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-31"><img src="anh01/bat-dia-20-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11129">
+                        <button id="love31" data-price="1190"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh31/goc1.jpg" data-goc2="anh31/goc2.jpg"
+                            data-goc3="anh31/goc3.jpg" data-goc4="anh31/goc4.jpg" data-chitiet="Bộ bàn ăn Bát Tràng cao cấp
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ tay in Logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-20.jpg'> 
+                                Bộ bàn ăn Bát Tràng cao cấp
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-14.jpg'> 
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ tay in Logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-10.jpg'> 
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ tay in Logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-14.jpg   '> <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-29.jpg'> 
+                                Bộ bàn ăn Bát Tràng cao cấp
+                                Bộ bàn ăn Bát Tràng cao cấp vẽ tay in Logo" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang31"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ bàn ăn cao cấp vẽ sen <br> <b>1.190.000 đ</b>
+                    </p> <i>Bộ bàn ăn cao cấp vẽ sen Bát Tràng in Logo KGG04</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-32"><img src="anh01/bat-dia-32-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11130">
+                        <button id="love32" data-price="0"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh32/goc1.jpg" data-goc2="anh32/goc2.jpg"
+                            data-goc3="anh32/goc3.jpg" data-goc4="anh32/goc4.jpg" data-chitiet="Bộ bàn ăn gốm sứ Bát Tràng
+                                Bộ bàn ăn gốm sứ Bát Tràng in Logo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-32.jpg'> 
+                                
+                                Bộ bàn ăn gốm sứ Bát Tràng
+                                Bộ bàn ăn gốm sứ Bát Tràng in Logo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-17.jpg'> 
+                                
+                                Bộ bàn ăn gốm sứ Bát Tràng
+                                Bộ bàn ăn gốm sứ Bát Tràng in Logo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-18.jpg'> <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-13.jpg'> 
+                                
+                                Bộ bàn ăn gốm sứ Bát Tràng
+                                Bộ bàn ăn gốm sứ Bát Tràng in Logo" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang32"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ bàn ăn Bát Tràng cao cấp <br> <b>Tạm hết</b>
+                    </p> <i>Bộ bàn ăn Bát Tràng cao cấp KGG05 in Logo</i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-33"><img src="anh01/bat-dia-03-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11131">
+                        <button id="love33" data-price="1190"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh33/goc1.jpg" data-goc2="anh33/goc2.jpg"
+                            data-goc3="anh32/goc3.jpg" data-goc4="anh33/goc4.jpg" data-chitiet="Bộ bàn ăn Bát Tràng
+                                Bộ bàn ăn Bát Tràng cao cấp in Logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-22.jpg'> 
+                                Bộ bàn ăn Bát Tràng
+                                Bộ bàn ăn Bát Tràng cao cấp in Logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-07.jpg'> 
+                                Bộ bàn ăn Bát Tràng 
+                                Bộ bàn ăn Bát Tràng cao cấp in Logo
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-04.jpg'> <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-03.jpg   '> 
+                                Bộ bàn ăn 
+                                Bộ bàn ăn Bát Tràng cao cấp in Logo" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang33"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ bát đĩa KGG03 <br> <b>1.190.000 đ</b>
+                    </p> <i>Bộ bát đĩa KGG03 in logo</i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-34"><img src="anh01/bat-dia-02-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11132">
+                        <button id="love34" data-price="2190"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh34/goc1.jpg" data-goc2="anh34/goc2.jpg"
+                            data-goc3="anh34/goc3.jpg" data-goc4="anh34/goc4.jpg" data-chitiet="Bộ bàn ăn Bát Tràng
+                                Bộ bàn ăn Bát Tràng cao cấp in Logo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-23.jpg'> 
+                                
+                                Bộ bàn ăn Bát Tràng
+                                Bộ bàn ăn Bát Tràng cao cấp in Logo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-09.jpg'> 
+                                
+                                Bộ bàn ăn Bát Tràng cao cấp
+                                Bộ bàn ăn Bát Tràng cao cấp in Logo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-05.jpg'> 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-02.jpg'> 
+                                " onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang34"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ bát đĩa bàn ăn KGG02 <br> <b>2.190.000 đ</b>
+                    </p> <i>Bộ bát đĩa bàn ăn KGG02 in logo</i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-35"><img src="anh01/bat-dia-01-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11133">
+                        <button id="love35" data-price="1190"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh35/goc1.jpg" data-goc2="anh35/goc2.jpg"
+                            data-goc3="anh35/goc3.jpg" data-goc4="anh35/goc4.jpg" data-chitiet="Bộ chén bát in Logo
+                                Bộ chén bát in Logo gốm sứ Bát Tràng
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-06.jpg'> 
+                                
+                                Bộ chén bát in Logo 
+                                Bộ chén bát in Logo gốm sứ Bát Tràng
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-08.jpg'> 
+                                Bộ chén bát in Logo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/09/bat-dia-01.jpg'> 
+                                Bộ chén bát in Logo gốm sứ Bát Tràng" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang35"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ bát đĩa bàn ăn Cao Cấp Bát Tràng <br> <b>1.190.000 đ</b>
+                    </p> <i>Bộ bát đĩa bàn ăn KGG01</i>
+                </div>
+
+            </div>
+
+
+            <div class="hopsanpham1112">
+
+                <div class="hopsp30" id="hopsp30-36"><img src="anh01/am-chen-bat-trang-188.9-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11134">
+                        <button id="love36" data-price="490"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh36/goc1.jpg" data-goc2="anh36/goc2.jpg"
+                            data-goc3="anh36/goc3.jpg" data-goc4="anh36/goc4.jpg" data-chitiet="Bộ trà đắp tách lót
+                                Bộ trà đắp tách lót S2
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/am-chen-bat-trang-188.9.jpg'> 
+                                Bộ trà đắp tách lót
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/am-chen-bat-trang-188.7.jpg'> 
+                                Bộ trà đắp tách lót S2
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/am-chen-bat-trang-188.8.jpg'> 
+                                Bộ trà đắp tách lót 
+                                Bộ trà đắp tách lót S2" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang36"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ trà đắp tách lót S2 <br> <b>490.000 đ</b>
+                    </p> <i>Bộ trà đắp tách lót S2</i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-37"><img src="anh01/am-chen-bat-trang-185-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11135">
+                        <button id="love37" data-price="350"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh37/goc1.jpg" data-goc2="anh37/goc2.jpg"
+                            data-goc3="anh37/goc3.jpg" data-goc4="anh37/goc4.jpg" data-chitiet="Bộ trà đắp tách lót
+                                Bộ trà đắp tách lót S2
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/am-chen-bat-trang-188.9.jpg'> 
+                                Bộ trà đắp tách lót
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/am-chen-bat-trang-188.7.jpg'> 
+                                Bộ trà đắp tách lót S2
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/am-chen-bat-trang-188.8.jpg'> 
+                                Bộ trà đắp tách lót 
+                                Bộ trà đắp tách lót S2" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang37"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ ấm chén trà hoa sen<br> <b>350.000 đ</b>
+                    </p> <i>Bộ ấm chén trà hoa sen quai thường</i>Bộ trà ấm vuông men ngọc bích 05
+                </div>
+
+                <div class="hopsp30" id="hopsp30-38"><img src="anh01/am-chen-bat-trang-168-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11136">
+                        <button id="love38" data-price="0"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh38/goc1.jpg" data-goc2="anh38/goc2.jpg"
+                            data-goc3="anh38/goc3.jpg" data-goc4="anh38/goc4.jpg" data-chitiet="Bộ trà ấm vuông 
+                                Bộ trà ấm vuông men ngọc bích đẹp
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-167.jpg'>
+                                Bộ trà ấm vuông
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-166.jpg'>
+                                Bộ trà ấm vuông men ngọc bích đẹp
+                                 
+                                
+                                Bộ trà ấm vuông
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-165.jpg'>
+                                Bộ trà ấm vuông men ngọc bích đẹp
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-163.jpg'>
+                                
+                                Bộ trà ấm vuông
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-162.jpg'>
+                                Bộ trà ấm vuông men ngọc bích đẹp
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-161.jpg'>
+                                Bộ trà ấm vuông
+                                Bộ trà ấm vuông men ngọc bích đẹp
+                                 
+                                
+                                Bộ trà ấm vuông
+                                Bộ trà ấm vuông men ngọc bích đẹp" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang38"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ trà ấm vuông men ngọc bích 05<br> <b>Tạm hết</b>
+                    </p> <i>Bộ trà ấm vuông men ngọc bích 05</i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-39"><img src="anh01/am-chen-bat-trang-156-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11137">
+                        <button id="love39" data-price="1000"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh39/goc1.jpg" data-goc2="anh39/goc2.jpg"
+                            data-goc3="anh39/goc3.jpg" data-goc4="anh39/goc4.jpg"
+                            data-chitiet="Bí mật trong chất liệu của bộ trà ấm vuông men nâu (05)
+                                Là bộ sản phẩm chính hãng, có xuất xứ từ làng gốm Bát Tràng – Hà Nội. Bộ trà ấm vuông men nâu được tinh chế từ một trong các loại men đầu tiên của làng gốm Bát Tràng.
+                                
+                                Men nâu được tạo thành từ các loại đá có hàm lượng sắt cao, đá non, đá màu được nghiền nhỏ trong khoảng thời gian từ 70 đến 80 tiếng sau đó cho vào lò nung từ 1100  đến 1200 độ C.
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-155.jpg'>
+                                Đặc điểm của loại men nâu là không bóng, trên bề mặt thường có vết sần. Điều này này tạo cho sản phẩm sự thô mộc nhưng không kém phần tinh tế.
+                                
+                                Bộ trà ấm vuông men nâu
+                                Bộ trà ấm vuông men nâu Bát tràng
+                                Tỉ mỉ trong từng chi tiết của bộ trà ấm vuông men nâu (05)
+                                Sản phẩm gốm Bát Tràng không chỉ đẹp và đa dạng về kiểu dáng, mẫu mã, mà còn ấn tượng bởi sự tỉ mỉ trong cả quá trình chế tác sản phẩm.
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-154.jpg'>
+                                Khác với những bộ ấm trà thông thường, ấm hình vuông là một chi tiết độc đáo của bộ sản phẩm này. Tuy là hình vuông, nhưng những góc cạnh của ấm lại được bẻ cong một cách mềm mại, uyển chuyển, tạo nên sự khác biệt cho sản phẩm.
+                                
+                                Bộ trà ấm vuông men nâu
+                                Bộ trà ấm vuông men nâu Bát tràng
+                                Chi tiết quai ấm cũng được các nghệ nhân làng gốm Bát Tràng quan tâm đặc biệt, nó thể hiện ở sự chỉn chu, chắc chắn khi dùng quai mây, được quấn vòng hai đầu và được sơn một lớp màu tạo sự thống nhất cho bộ sản phẩm.
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-152-1.jpg'>
+                                Tuy không có hoa văn kèm theo, nhưng bộ trà ấm vuông men nâu vẫn tinh tế, sáng trọng chỉ nhờ dòng men nâu độc đáo. Bộ sản phẩm này là một trong những kiệt tác của những nghệ nhân làng gốm Bát Tràng.
+                                
+                                Bộ trà ấm vuông men nâu
+                                Bộ trà ấm vuông men nâu Bát tràng
+                                Ở đâu bán bộ trà ấm vuông men nâu (05) chất lượng, giá rẻ?
+                                Hiện nay, với sự phát triển của công nghệ, sự giao lưu buôn bán dễ dàng trong nước, đã tạo điều kiện thuận lợi cho nhiều cơ sở gốm giả mọc lên, bắt chước mẫu mã của những cơ sở sản xuất gốm sứ nổi tiếng để tồn hàng giả, hàng kém chất lượng ra thị trường.  
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-151.jpg     '>
+                                Khách hàng nên tìm đến những địa chỉ uy tín, để chọn mua những sản phẩm chính hãng, vừa chất lượng, vừa an toàn.
+                                
+                                Bộ trà ấm vuông men nâu
+                                Bộ trà ấm vuông men nâu Bát tràng
+                                Không Gian Gốm Bát Tràng tại Đà Nẵng luôn tự hào là địa điểm được khách hàng tin tưởng đến chọn mua các sản phẩm gốm sứ, như lọ hoa, chén bát, ấm trà,…
+                                
+                                Các sản phẩm nhập 100% từ xưởng sản xuất gốm Bát Tràng – Hà Nội, chúng tôi cam kết chất lượng cũng như giá cả cho quý khách hàng.
+                                
+                                Liên hệ trực tiếp với chúng tôi để được giải đáp mọi thắc mắc và đặt hàng thông qua website: Không Gian Gốm Bát Tràng"
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang39"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ trà ấm vuông men nâu (05)<br> <b>1.000.000 đ</b>
+                    </p> <i>Bộ trà ấm vuông men nâu </i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-40"><img src="anh01/am-chen-bat-trang-144-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11138">
+                        <button id="love40" data-price="1010"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh40/goc1.jpg" data-goc2="anh40/goc2.jpg"
+                            data-goc3="anh40/goc3.jpg" data-goc4="anh40/goc4.jpg" data-chitiet="Bộ ấm trà cao chén nhỏ
+                                Bộ ấm trà cao chén nhỏ men trầm bóng
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-141.jpg'>
+                                Bộ ấm trà cao chén nhỏ
+                                Bộ ấm trà cao chén nhỏ men trầm bóng
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-142.jpg'>
+                                
+                                Bộ ấm trà cao chén nhỏ
+                                Bộ ấm trà cao chén nhỏ men trầm bóng
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-143.jpg'>
+                                
+                                Bộ ấm trà cao chén nhỏ
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-140.jpg'>
+                                Bộ ấm trà cao chén nhỏ men trầm bóng" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang40"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ trà ấm cao chén nhỏ <br> <b>1.010.000 đ</b>
+                    </p> <i>Bộ trà ấm cao chén nhỏ men trầm bóng (06) </i>
+                </div>
+                <div class="hopsp30" id="hopsp30-41"><img src="anh01/am-chen-bat-trang-132-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11139">
+                        <button id="love41" data-price="0"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh41/goc1.jpg" data-goc2="anh41/goc2.jpg"
+                            data-goc3="anh41/goc3.jpg" data-goc4="anh41/goc4.jpg" data-chitiet="Bộ trà ấm lục giác men hỏa biến
+                                Bộ trà ấm lục giác men hỏa biến đẹp
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-135.jpg'>
+                                Bộ trà ấm lục giác men hỏa biến
+                                Bộ trà ấm lục giác men hỏa biến đẹp
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-136.jpg'>
+                                Bộ trà ấm lục giác men hỏa biến
+                                Bộ trà ấm lục giác men hỏa biến đẹp
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-136.jpg'>
+                                Bộ trà ấm lục giác men hỏa biến
+                                Bộ trà ấm lục giác men hỏa biến đẹp
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-131.jpg'> <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-133.jpg'>
+                                Bộ trà ấm lục giác men hỏa biến
+                                Bộ trà ấm lục giác men hỏa biến đẹp" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang41"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ trà ấm lục giác men hỏa biến <br> <b>Tạm hết</b>
+                    </p> <i>Bộ trà ấm lục giác men hỏa biến</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-42"><img src="anh01/am-chen-bat-trang-021-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11140">
+                        <button id="love42" data-price="390"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh42/goc1.jpg" data-goc2="anh42/goc2.jpg"
+                            data-goc3="anh42/goc3.jpg" data-goc4="anh42/goc4.jpg" data-chitiet="Bộ lán tách men xanh cao cấp
+                                Bộ lán tách men xanh cao cấp Bát Tràng
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-025.jpg'> <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-025.jpg'>
+                                
+                                Bộ lán tách men xanh cao cấp
+                                Bộ lán tách men xanh cao cấp Bát Tràng
+                                 
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-020.jpg'>
+                                Bộ lán tách men xanh cao cấp
+                                Bộ lán tách men xanh cao cấp Bát Tràng
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-021.jpg'>
+                                
+                                Bộ lán tách men xanh cao cấp
+                                Bộ lán tách men xanh cao cấp Bát Tràng" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang42"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ lán tách men xanh <br> <b>390.000 đ</b>
+                    </p> <i>Bộ lán tách men xanh Bát Tràng</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-43"><img src="anh01/am-chen-bat-trang-104-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11141">
+                        <button id="love43" data-price="1110"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh43/goc1.jpg" data-goc2="anh43/goc2.jpg"
+                            data-goc3="anh43/goc3.jpg" data-goc4="anh43/goc4.jpg"
+                            data-chitiet=" <h3>Bộ trà và đĩa lót men rêu Bát Tràng Cao cấp- Sự lựa chọn tinh tế
+                                    Làng Bát Tràng nổi danh với nghề làng gốm hàng trăm năm nay, những sản phẩm ở đây được sản xuất hoàn toàn bằng thủ công. Bộ trà và đĩa lót men rêu Bát Tràng Cao cấp cũng là một trong những sản phẩm được ra đời nhờ bàn tay khéo léo của các nghệ nhân Bát Tràng.</h3>
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-103.jpg'>
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Với lịch sử hơn 800 năm, mỗi một sản phẩm của Bát Tràng đều chứa đựng những tinh hoa được tích lũy qua từng thế hệ. Vì thế họ hiểu hơn ai hết về những giá trị ẩn chứa trong từng sản phẩm. Bộ trà và đĩa lót men rêu cũng đã ra đời nhờ sự thấu hiểu về tâm hồn, nhiệt huyết từ trái tim của những người nghệ nhân Bát Tràng.
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-106-510x510.jpg'>
+                                Bộ trà và đĩa lót
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Với thiết kế độc đáo của các đĩa lót kết hợp màu men nâu cách điệu màu vô cùng tinh tế. Quai đúc đồng được thiết kế đơn giản nhưng lại rất sang trọng với màu nắp ấm nổi bật tạo cho người nhìn một cảm giác tất cả như thể hòa vào nhau.
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-105-510x510.jpg'>
+                                Nên tìm Bộ trà và đĩa lót men rêu Bát Tràng Cao cấp ở đâu tại Đà Nẵng?
+                                Mang trong mình màu men nâu cùng quai đúc đồng tinh tế tạo nên một tổng thể vừa cổ điển vừa hiện đại, vừa sang trọng nhưng lại mang ít hơi hướng dân dã. Bộ trà và đĩa lót men rêu Bát Tràng Cao cấp sẽ là lựa chọn tối ưu cho những người yêu thích giá trị hoài cổ.
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-102.jpg'>
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Bộ trà và đĩa lót men rêu Bát Tràng Cao cấp không chỉ là bộ trà cụ thông thường mà nó còn là biểu thị của sự tinh tế, đẳng cấp của gia chủ. Sở hữu một bộ Bộ trà và đĩa lót men rêu sẽ là một điều tuyệt vời cho ngôi nhà của bạn.
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-104.jpg'>
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Được nung ở nhiệt độ trên 1000 độ C nên những sản phẩm Bát tràng nói chung và Bộ trà và đĩa lót men rêu Bát Tràng Cao cấp nói riêng sẽ là lựa chọn tốt nhất cho những người yêu thích sự an toàn. Bởi khi được nung ở nhiệt độ cao sẽ không còn các tạp chất gây hại cho sức khỏe.
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/08/am-chen-bat-trang-100.jpg'>
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Bộ trà và đĩa lót Bát Tràng cao cấp
+                                Hiện tại quý khách có thể tìm thấy Bộ trà và đĩa lót men rêu Bát Tràng Cao cấp ở Showroom Không Gian Gốm- Đà Nẵng. Khi đến mua hàng trực tiếp tại showroom quý khách sẽ nhận được những ưu đãi bất ngờ.
+                                
+                                Ngoài ra ở đây quý khách có thể thoải mãi lựa chọn vô số những sản phẩm gốm sứ với các mẫu mã, công dụng, màu sắc khác nhau. Chúng tôi cam kết các sản phẩm gốm sứ tại đây đều có xuất sứ từ Bát Tràng."
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang43"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Bộ trà và đĩa lót men rêu<br> <b>1.110.000 đ</b>
+                    </p> <i>Bộ trà và đĩa lót men rêu Bát Tràng cao cấp</i>
+                </div>
+
+
+            </div>
+
+
+            <div class="hopsanpham1112">
+
+                <div class="hopsp30" id="hopsp30-44"><img src="anh01/loc-binh-21-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11142">
+                        <button id="love44" data-price="12110"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh44/goc1.jpg" data-goc2="anh44/goc2.jpg"
+                            data-goc3="anh44/goc3.jpg" data-goc4="anh44/goc4.jpg" data-chitiet="Lộc bình Phúc Đức 1M4 men xanh
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/loc-binh-21.jpg'>
+                                Lộc bình Phúc Đức 1M4 men xanh
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20190930_092502.jpg'> <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20190930_092450.jpg'>
+                                
+                                Câu đối trên cổ lộc bình
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20190930_092440.jpg'>
+                                
+                                Họa tiết trang trí tinh xảo trên thân sản phẩm  " onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang44"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lộc bình Phúc Đức MÀU XANH<br> <b>12.110.000 đ</b>
+                    </p> <i>Lộc bình Phúc Đức 1M4 men xanh</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-45"><img src="anh01/20190805_100935-1-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11143">
+                        <button id="love45" data-price="17110"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh45/goc1.jpg" data-goc2="anh45/goc2.jpg"
+                            data-goc3="anh45/goc3.jpg" data-goc4="anh45/goc4.jpg"
+                            data-chitiet="Cửa hàng bán lộc bình hanh vàng tại Đà Nẵng
+                                Lộc bình 1M4 hanh vàng vẽ Tứ Quý <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20190805_100935-1.jpg'> <br> khong con thong tin nao ..."
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang45"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lộc bình 1M4 hanh vàng MÀU XANH<br> <b>17.110.000 đ</b>
+                    </p> <i>Lộc bình 1M4 hanh vàng vẽ Tứ Quý</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-46"><img src="anh01/20190805_101214-1-300x300.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11144">
+                        <button id="love46" data-price="17110"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh46/goc1.jpg" data-goc2="anh46/goc2.jpg"
+                            data-goc3="anh46/goc3.jpg" data-goc4="anh46/goc4.jpg"
+                            data-chitiet="Cửa hàng bán lộc bình hanh vàng tại Đà Nẵng
+                                Lộc bình 1M4 hanh vàng vẽ Tứ Quý <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20190805_101214-1.jpg'> <br> khong con thong tin nao ..."
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang46"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lộc bình 1m4 hanh vàng vẽ công<br> <b>17.110.000 đ</b>
+                    </p> <i>Lộc bình 1m4 hanh vàng vẽ công</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-47"><img src="anh01/loc-binh-22-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11145">
+                        <button id="love47" data-price="0"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh47/goc1.jpg" data-goc2="anh47/goc2.jpg"
+                            data-goc3="anh47/goc3.jpg" data-goc4="anh47/goc4.jpg"
+                            data-chitiet="
+                                Họa tiết phần cổ và miệng lộc bình <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/loc-binh-23.jpg'>
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/loc-binh-24-1.jpg'>
+                                Họa tiết trang trí trên thân sản phẩm cực kỳ tinh xảo
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/loc-binh-25-1.jpg'> <br>
+                                Phần đáy bọc đồng tỉ mĩ <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/loc-binh-25-1.jpg'>"
+                            onclick="chuyensang(this);"><ion-icon name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang47"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lộc bình Tứ Quý men rạn bọc đồng XANH da trời<br> <b>Tạm hết</b>
+                    </p> <i>Lộc bình Tứ Quý men rạn bọc đồng</i>
+                </div>
+
+                <div class="hopsp30" id="hopsp30-48"><img
+                        src="anh01/z1190237573800_e082660b6fde9ade785f57a875ca64e6-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11146">
+                        <button id="love48" data-price="12000"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh48/goc1.jpg" data-goc2="anh48/goc2.jpg"
+                            data-goc3="anh48/goc3.jpg" data-goc4="anh48/goc4.jpg" data-chitiet="Lộc bình Tứ Cảnh men rạn 1M6
+                                Lộc bình Tứ Cảnh men rạn 1M6
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/z1190237573800_e082660b6fde9ade785f57a875ca64e6.jpg'>
+                                Lộc bình Tứ Cảnh men rạn 1M6
+                                Cổ thon <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/20180924_111359.jpg'>
+                                Lộc bình Tứ Cảnh men rạn 1M6
+                                Phần miệng loe <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/20180924_111352.jpg'>
+                                Lộc bình Tứ Cảnh men rạn 1M6
+                                Thân phình <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/20180924_111308.jpg'>
+                                Lộc bình men rạn đắp nổi tại cửa hàng
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2018/11/20180924_110134.jpg'>
+                                Lộc bình men rạn đắp nổi" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang48"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lộc bình Tứ Cảnh <br> <b>12.000.000 đ</b>
+                    </p> <i>Lộc bình Tứ Cảnh men rạn 1M6</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-49"><img src="anh01/loc-binh-13-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11147">
+                        <button id="love49" data-price="29900"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh49/goc1.jpg" data-goc2="anh49/goc2.jpg"
+                            data-goc3="anh49/goc3.jpg" data-goc4="anh49/goc4.jpg" data-chitiet="Lộc bình men rạn Đào Công 1M25
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/loc-binh-13.jpg'>
+                                Lộc bình men rạn Đào Công 1M25
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_152341.jpg'> <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_152334.jpg'>
+                                
+                                Họa tiết hoa mẫu đơn đắp nổi
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_152240.jpg'>
+                                
+                                Họa tiết chim công xòe" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang49"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lộc bình men rạn Đào Công 1M25<br> <b>29.900.000 đ</b>
+                    </p> <i>Lộc bình men rạn Đào Công 1M25</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-50"><img src="anh01/loc-binh-6-1-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11148">
+                        <button id="love50" data-price="19900"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh50/goc1.jpg" data-goc2="anh50/goc2.jpg"
+                            data-goc3="anh50/goc3.jpg" data-goc4="anh50/goc4.jpg" data-chitiet="Lục bình vẽ Tứ Quý nền vàng 1M4
+                                Lục bình vẽ Tứ Quý nền vàng 1M4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_113017.jpg'>
+                                Lục bình vẽ Tứ Quý nền vàng 1M4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_113638.jpg'> <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_113543.jpg'>
+                                Lục bình vẽ Tứ Quý nền vàng 1M4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/loc-binh-6-1.jpg'>
+                                Họa tiết Tùng Cúc Trúc Mai vẽ tay trên thân lộc bình
+                                
+                                Lục bình vẽ Tứ Quý nền vàng 1M4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_113652.jpg'>
+                                Lục bình vẽ Tứ Quý nền vàng 1M4
+                                Lục bình vẽ Tứ Quý nền vàng 1M4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_113652.jpg'>
+                                Lục bình vẽ Tứ Quý nền vàng 1M4
+                                Tinh xảo – sinh động – đẹp mắt" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang50"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lục bình vẽ Tứ Quý nền vàng 1M4<br> <b>19.900.000 đ</b>
+                    </p> <i>Lục bình vẽ Tứ Quý nền vàng 1M4</i>
+                </div>
+                <div class="hopsp30" id="hopsp30-51"><img src="anh01/loc-binh-11-400x400.jpg" alt="">
+                    <div class="hopchuadanhmuc111" id="hopchuadanhmuc11149">
+                        <button id="love51" data-price="32900"><ion-icon name="heart-outline"></ion-icon></button>
+                        <button id="xemchi" data-goc1="anh51/goc1.jpg" data-goc2="anh51/goc2.jpg"
+                            data-goc3="anh51/goc3.jpg" data-goc4="anh51/goc4.jpg" data-chitiet="Lục bình Lý Ngư Vọng Nguyệt nền vàng 1M4
+                                Mặt trước Lục bình Lý Ngư Vọng Nguyệt nền vàng 1M4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/loc-binh-11.jpg'>
+                                Lục bình Lý Ngư Vọng Nguyệt men vàng 1m4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_151631.jpg'>
+                                Lục bình Lý Ngư Vọng Nguyệt men vàng 1m4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_151734.jpg'>
+                                Họa tiết tinh xảo 
+                                
+                                Lục bình Lý Ngư Vọng Nguyệt men vàng 1m4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/loc-binh-12.jpg'>
+                                Mặt sau Lục bình Lý Ngư Vọng Nguyệt nền vàng 1M4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_151838.jpg'>
+                                Lục bình Lý Ngư Vọng Nguyệt men vàng 1m4
+                                <img src='https://battrangdanang.vn/wp-content/uploads/2019/09/20180924_151821.jpg'>
+                                Lục bình Lý Ngư Vọng Nguyệt men vàng 1m4
+                                Vẽ tay thủ công 100%" onclick="chuyensang(this);"><ion-icon
+                                name="information-circle-outline"></ion-icon></button>
+                        <button id="themvaogiohang51"><ion-icon name="bag-add-outline"></ion-icon></button>
+                    </div>
+                    <div class="danhgia"><ion-icon name="star-outline"></ion-icon><ion-icon
+                            name="star-outline"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                    <p>
+                        Lục bình Lý Ngư Vọng Nguyệt<br> <b>32.900.000 đ</b>
+                    </p> <i>Lục bình Lý Ngư Vọng Nguyệt nền vàng 1M4</i>
+                </div>
+
+            </div>
+            <div id="hopthoigiansale"> <ion-icon name="hourglass-outline"></ion-icon> Thời Gian Sale Còn lại : </div>
+            <div id="hopsale">
+                <!-- hộp sale ở đây -->
+            </div>
+        </div>
+        <div class="hopphai">
+            <div class="hopchuchay">
+                <h3> <ion-icon name="notifications-circle-outline"> </ion-icon>
+                    Notification Products </h3>
+                <h3 id="dong"> <ion-icon name="open-outline"></ion-icon>
+                    OPEN / CLOSE</h3>
+
+                <p class="hopchuchays">
+                    <marquee direction="up">Đồ gốm <span style="font-size: 30px; font-family: 'Rubik Pixels', cursive;">
+                            " KHANHCERAMIC "</span> là một trong những thương hiệu đồ gốm nổi tiếng tại Việt Nam. Sản
+                        phẩm
+                        của Hải Ceramic được làm từ nguồn đất sét đặc biệt, được khai thác từ miền Nam Việt Nam.
+                        <img style="border-radius: 10px;" src="anh/blog-2-893x752.jpg" alt=""> Đặc
+                        biệt, đội ngũ nghệ nhân làm đồ gốm của Hải Ceramic đã truyền qua nhiều thế hệ, nên sản phẩm
+                        của
+                        họ luôn đảm bảo chất lượng và có giá trị nghệ thuật cao.
+                        <img style="border-radius: 10px;" src="anh/blog-4-893x752.jpg" alt="">
+                        Các sản phẩm của Hải Ceramic đều được làm thủ công, từng sản phẩm đều được tạo ra cẩn thận,
+                        từng
+                        chi tiết nhỏ đều được chăm chút kỹ lưỡng.
+                        <img style="border-radius: 10px;" src="anh/blog-5-893x752.jpg" alt=""> Hải Ceramic cung cấp
+                        cho
+                        khách hàng những sản phẩm đồ
+                        gốm đa dạng, từ dụng cụ nấu nướng cho đến quà tặng, đồ trang trí nhà cửa,….
+                        <img style="border-radius: 10px;" src="anh/blog-6-893x752.jpg" alt="">
+                        Nếu bạn đang tìm kiếm những sản phẩm đồ gốm đẹp và chất lượng, Hải Ceramic chắc chắn là một
+                        trong những lựa chọn hàng đầu của bạn. Sản phẩm của Hải Ceramic cũng là món quà ý nghĩa và
+                        độc
+                        <img style="border-radius: 10px;" src="anh/blog-1-893x752.jpg" alt="">
+                        đáo để tặng cho người thân, bạn bè hoặc đối tác trong các dịp đặc biệt.
+                    </marquee>
+                </p>
+
+            </div>
+
+            <div class="hopdanhgiasanpham">
+                <h3> <ion-icon name="star-outline"></ion-icon> Hãy Đánh Giá Sản Phẩm Của Chúng Tôi</h3>
+                <form>
+                    <label for="product-name">Tên sản phẩm:</label>
+                    <input type="text" id="product-name" name="product-name" placeholder="vd: bình gốm sứ "><br>
+
+                    <label for="rating">Đánh giá sản phẩm:</label>
+                    <select id="rating" name="rating">
+                        <option value="5">5 sao</option>
+                        <option value="4">4 sao</option>
+                        <option value="3">3 sao</option>
+                        <option value="2">2 sao</option>
+                        <option value="1">1 sao</option>
+                    </select><br>
+
+                    <label for="review">Đánh giá chi tiết:</label><br>
+                    <textarea id="review" name="review"
+                        placeholder="Hãy Viết Đánh Giá Chi Tiết ủa bạn vào Đây ...."></textarea><br>
+
+                    <input type="button" value="Gửi đánh giá">
+                </form>
+            </div>
+
+            <div class="hopchatluong">
+                <img src="anh/banner4.jpg" alt="">
+            </div>
+            <div class="hopvideo">
+                <h3> <ion-icon name="at-outline"></ion-icon>
+                    Thương Hiệu Của Chúng tôi </h3>
+                <div class="img"><img src="anh/aboutus1.png" alt=""></div>
+            </div>
+
+            <div class="hopsanpham1">
+                <h3> <ion-icon name="grid-outline"></ion-icon> Danh Mục Sản Phẩm</h3>
+                <ul>
+                    <li><a href="">ĐỒ THỜ BÁT TRÀNG <ion-icon name="log-out-outline"></ion-icon>
+                        </a></li>
+                    <li><a href="">LỌ HOA BÁT TRÀNG</a> <ion-icon name="log-out-outline"></ion-icon>
+                    </li>
+                    <li><a href="">BÁT ĐĨA BÁT TRÀNG</a> <ion-icon name="log-out-outline"></ion-icon>
+                    </li>
+                    <li><a href="">ẤM CHÉN BÁT TRÀNG</a> <ion-icon name="log-out-outline"></ion-icon>
+                    </li>
+                    <li><a href="">LỌ LỘC BÌNH</a> <ion-icon name="log-out-outline"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+            <div class="hopanh11_1">
+                <img src="anh/chum-ruou-hu-gao-gom-su-bat-trang-banner.jpg" alt="">
+            </div>
+            <div class="hopanh11_1">
+                <img src="anh/banner4.jpg" alt="">
+            </div>
+            <div class="hopanh11_1">
+                <img src="anh/banner5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container6" id="container6">
+        <div id="hops" class="hopgomnghethuat">
+            <p style=" border-bottom: 1px solid #b2bec3;">
+                GỐM NGHỆ THUẬT </p> <br>
+            <p>
+                Cửa hàng Gốm HAICERAMIC với 30 năm uy tín là xưởng sản xuất trực tiếp các sản phẩm gốm sứ
+                Bát
+                Tràng với mẫu mã đa dạng, chất lượng cao, giá cạnh tranh.
+
+                Ngoài ra, chúng tôi cũng kết hợp với những nghệ nhân hàng đầu tại làng gốm Bát Tràng để cung
+                cấp
+                những mặt hàng tốt nhất đến tay người tiêu dùng.
+
+            </p>
+            <p style=" border-bottom: 1px solid #b2bec3;"> KHANH CERAMIC </p>
+            <P>
+                @ Gốm Nghệ Thuật <br>
+                -Cao Đẳng FPT POLYTECHNIC ĐÀ NẴNG <br>
+                Tel:+84123456789 <br>
+                Hotline: +84 123 456 789 <br>
+                Email: KHANHDHPD07699@fpt.edu.com <br>
+                Giờ làm việc <br>
+                T2 tới T6: Từ 8:30 tới 18:30 <br>
+                T7 & CN: Từ 9:30 tới 17:30 <br>
+            </P>
+        </div>
+        <div id="hops" class="hopgioithieu">
+            <p style=" border-bottom: 1px solid #b2bec3;">GIỚI THIỆU</p>
+            <br>
+            <p>
+                Gốm Nghệ Thuật là một thương hiệu với chất lượng, uy tín và sự nỗ lực không ngừng nghỉ sẽ
+                mang
+                đến
+                quý khách hàng không chỉ là một không gian đầy hoài niệm với những sản phẩm gốm trang trí
+                đẹp,
+                cao
+                cấp mà còn tạo nên điểm nhấn độc đáo và tinh tế của nét đẹp văn hóa nghệ thuật Việt Nam
+                thông
+                qua
+                những sản phẩm gốm trang trí đẹp.
+            </p>
+        </div>
+        <div id="hops" class="hotro">
+            <p style=" border-bottom: 1px solid #b2bec3;">HỖ TRỢ KHÁCH HÀNG</p>
+            <br>
+            <p> Email: order@kiettacnghethuat.com <br>
+                Giờ làm việc <br>
+                T2 tới T6: Từ 8:30 tới 18:30 <br>
+                T7 & CN: Từ 9:30 tới 17:30
+            </p>
+        </div>
+        <div id="hops" class="ketnoi">
+            <p style=" border-bottom: 1px solid #b2bec3;">
+                KẾT NỐI VỚI CHÚNG TÔI
+
+            </p>
+            <br>
+            <div class="video">
+                <img src="anh/outro.gif" alt="">
+            </div> <br>
+            <i> Gốm Nghệ Thuật là một thương hiệu với chất lượng, uy tín và sự nỗ lực không ngừng nghỉ</i>
+
+        </div>
+
+    </div>
+
+    <script src="trangmucsanpham.js"></script>
+    <script src="chitietsanpham1.js"></script>
+    <script src="center.js"></script>
+    <script src="sulihieuungchung.js"></script>
+
+
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const productBoxes = document.querySelectorAll('.hopsp30');
+
+        searchInput.addEventListener('keyup', function () {
+            const searchText = this.value.toLowerCase();
+            productBoxes.forEach(function (box) {
+                const title = box.querySelector('p').textContent.toLowerCase();
+                if (title.indexOf(searchText) > 0) {
+                    box.style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
